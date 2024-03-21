@@ -2,5 +2,5 @@
     <string name="app_name">FYP</string>
     <string name="login">Login</string>
     <string name="name">Name</string>
-    <string name="register">Not registered yet? Register Here</string>
+    <string name="register">Not have an account?Register here</string>
 </resources>
