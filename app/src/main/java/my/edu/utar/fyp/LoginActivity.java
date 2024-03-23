@@ -1,6 +1,5 @@
 package my.edu.utar.fyp;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -24,7 +23,6 @@ public class LoginActivity extends AppCompatActivity {
     private EditText inputEmail,inputPassword;
     private FirebaseAuth mAuth;
     private FirebaseUser mUser;
-    private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +33,6 @@ public class LoginActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.loginButton);
         inputEmail = findViewById(R.id.inputEmail);
         inputPassword = findViewById(R.id.inputPassword);
-        progressDialog = new ProgressDialog(this);
         mAuth=FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
 
@@ -59,29 +56,22 @@ public class LoginActivity extends AppCompatActivity {
         String password = inputPassword.getText().toString();
         if(email.isEmpty())
         {
-            inputEmail.setError("Enter Valid Email");
+            inputEmail.setError("Please Enter Valid Email");
         }
-        else if(password.isEmpty() || password.length()<6)
+        else if(password.isEmpty())
         {
-            inputPassword.setError("Enter Valid Password");
+            inputPassword.setError("Please Enter Valid Password");
         }
         else {
-            progressDialog.setMessage("Please wait till Login...");
-            progressDialog.setTitle("LoggedIn");
-            progressDialog.setCanceledOnTouchOutside(false);
-            progressDialog.show();
-
             mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful())
                     {
-                        progressDialog.dismiss();
                         nextActivity();
                         Toast.makeText(LoginActivity.this,"Login Successful",Toast.LENGTH_SHORT).show();
                     }else
                     {
-                        progressDialog.dismiss();
                         Toast.makeText(LoginActivity.this,""+task.getException(),Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -90,8 +80,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void nextActivity() {
-        Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        Intent intent = new Intent(LoginActivity.this, YogaDescriptionActivity.class);
         startActivity(intent);
     }
 }

@@ -75,28 +75,21 @@ public class RegisterActivity extends AppCompatActivity {
         {
             registerEmail.setError("Enter Valid Email");
         }
-        else if(password.isEmpty() || password.length()<6)
+        else if(password.isEmpty())
         {
             registerPassword.setError("Enter Valid Password");
         }
         else
         {
-            progressDialog.setMessage("Please wait till Registration...");
-            progressDialog.setTitle("Registration");
-            progressDialog.setCanceledOnTouchOutside(false);
-            progressDialog.show();
-
             mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful())
                     {
-                        progressDialog.dismiss();
                         saveUserDetail(age);
                     }
                     else
                     {
-                        progressDialog.dismiss();
                         Toast.makeText(RegisterActivity.this,""+task.getException(),Toast.LENGTH_SHORT).show();
                     }
                 }
