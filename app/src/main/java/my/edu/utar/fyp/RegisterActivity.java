@@ -32,7 +32,6 @@ public class RegisterActivity extends AppCompatActivity {
     private Button registerButton;
     private FirebaseAuth mAuth;
     private FirebaseUser mUser;
-    private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,22 +42,20 @@ public class RegisterActivity extends AppCompatActivity {
         registerPassword = findViewById(R.id.registerPassword);
         registerButton = findViewById(R.id.registerButton);
         registerAge = findViewById(R.id.registerAge);
-        progressDialog = new ProgressDialog(this);
         mAuth= FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
 
-        Drawable drawable = getResources().getDrawable(R.drawable.age_icon);
-        BitmapDrawable bitmapDrawable = (BitmapDrawable) drawable;
+        Drawable ageIcon = getResources().getDrawable(R.drawable.age_icon);
+        BitmapDrawable bitmapDrawable = (BitmapDrawable) ageIcon;
         Bitmap bitmap = bitmapDrawable.getBitmap();
 
-        int desiredWidth = 100;
-        int desiredHeight = 100;
+        int desiredWidth = 80;
+        int desiredHeight = 80;
 
         Bitmap resizedBitmap = Bitmap.createScaledBitmap(bitmap, desiredWidth, desiredHeight, true);
+        Drawable resizedAgeIcon = new BitmapDrawable(getResources(), resizedBitmap);
 
-        Drawable resizedDrawable = new BitmapDrawable(getResources(), resizedBitmap);
-
-        registerAge.setCompoundDrawablesWithIntrinsicBounds(resizedDrawable, null, null, null);
+        registerAge.setCompoundDrawablesWithIntrinsicBounds(resizedAgeIcon, null, null, null);
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -106,7 +103,6 @@ public class RegisterActivity extends AppCompatActivity {
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        progressDialog.dismiss();
                         if(task.isSuccessful()) {
                             nextActivity();
                             Toast.makeText(RegisterActivity.this,"Registration Successful",Toast.LENGTH_SHORT).show();

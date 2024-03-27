@@ -1,10 +1,14 @@
 package my.edu.utar.fyp;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     private TextView registerTextView;
     private Button loginButton;
     private EditText inputEmail,inputPassword;
+    private ImageView logo;
     private FirebaseAuth mAuth;
     private FirebaseUser mUser;
 
@@ -33,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.loginButton);
         inputEmail = findViewById(R.id.inputEmail);
         inputPassword = findViewById(R.id.inputPassword);
+        logo = findViewById(R.id.logo);
         mAuth=FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
 
@@ -56,11 +62,11 @@ public class LoginActivity extends AppCompatActivity {
         String password = inputPassword.getText().toString();
         if(email.isEmpty())
         {
-            inputEmail.setError("Please Enter Valid Email");
+            inputEmail.setError("Please Enter Email");
         }
         else if(password.isEmpty())
         {
-            inputPassword.setError("Please Enter Valid Password");
+            inputPassword.setError("Please Enter Password");
         }
         else {
             mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
