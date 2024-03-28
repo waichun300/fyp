@@ -32,11 +32,11 @@ public class YogaPlan1Activity extends AppCompatActivity {
         stopButton = findViewById(R.id.yogaPlan1StopButton);
         resetButton = findViewById(R.id.yogaPlan1ResetButton);
 
-        suryaNamaskarImageView.setOnClickListener(new View.OnClickListener() {
+        utkatasanaImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(YogaPlan1Activity.this, YogaDescriptionActivity.class);
-                intent.putExtra("type", "surya namaskar");
+                intent.putExtra("type", "utkatasana");
                 startActivity(intent);
             }
         });
@@ -48,14 +48,7 @@ public class YogaPlan1Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        utkatasanaImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(YogaPlan1Activity.this, YogaDescriptionActivity.class);
-                intent.putExtra("type", "utkatasana");
-                startActivity(intent);
-            }
-        });
+
         navasanaImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,6 +62,15 @@ public class YogaPlan1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(YogaPlan1Activity.this, YogaDescriptionActivity.class);
                 intent.putExtra("type", "phalakasana");
+                startActivity(intent);
+            }
+        });
+
+        suryaNamaskarImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(YogaPlan1Activity.this, YogaDescriptionActivity.class);
+                intent.putExtra("type", "surya namaskar");
                 startActivity(intent);
             }
         });

@@ -24,8 +24,8 @@ public class CardioExerciseDescriptionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cardio_exercise_description);
 
         videoView = findViewById(R.id.CardioExerciseVideoView);
-        titleView = findViewById(R.id.CardioExerciseTitle);
-        descriptionView = findViewById(R.id.CardioExerciseDescription);
+        titleView = findViewById(R.id.CardioExerciseTitleView);
+        descriptionView = findViewById(R.id.CardioExerciseDescriptionView);
         Intent intent = getIntent();
         String type = intent.getStringExtra("type");
 
@@ -35,11 +35,10 @@ public class CardioExerciseDescriptionActivity extends AppCompatActivity {
             videoView.setVideoURI(running_uri);
             videoView.start();
             titleView.setText("Running");
-            descriptionView.setText(" Keep your arms compact and relaxed, knees bent, and body tall to maintain proper posture throughout your run."
+            descriptionView.setText("First, keep your arms compact and relaxed, knees bent, and body tall to maintain proper posture throughout your run."
                     + "\nThen,land on your midfoot directly underneath your center of mass to avoid overstriding."
                     + "\nFinally, lean forward slightly from your ankles, rather than your hips, to move forward more efficiently.");
-        }
-        else if (type.equals("push up")) {
+        } else if (type.equals("push up")) {
             video_path = "android.resource://" + getPackageName() + "/" + R.raw.push_up;
             Uri push_up_uri = Uri.parse(video_path);
             videoView.setVideoURI(push_up_uri);
@@ -58,7 +57,7 @@ public class CardioExerciseDescriptionActivity extends AppCompatActivity {
                     + "\nThen,keep your arms up and in a circular motion at your waist and elbows ensures effective rope rotation."
                     + "\nFinally,maintain correct body position when jumping rope, with hips over knees and shoulders over hips, like a boxer in the boxing ring.");
         }else if (type.equals("squat jump")){
-            video_path = "android.resource://" + getPackageName() + "/" + R.raw.squat_jump;
+            video_path = "android.resource://" + getPackageName() + "/" + R.raw.squatjump;
             Uri squat_jump_uri = Uri.parse(video_path);
             videoView.setVideoURI(squat_jump_uri);
             videoView.start();

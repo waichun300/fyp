@@ -9,11 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="24dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,11 +26,26 @@
             android:id="@+id/registerTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/alike"
             android:text="Register"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="50dp"
             android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/registerUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:fontFamily="@font/alike"
+            android:hint="UserName"
+            android:inputType="text"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/registerEmail"
@@ -44,10 +55,11 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="80dp"
             android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="10dp"
             android:ems="10"
+            android:fontFamily="@font/alike"
             android:hint="Email"
             android:inputType="text"
-            android:drawablePadding="10dp"
             android:textSize="24sp" />
 
         <EditText
@@ -58,10 +70,11 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="80dp"
             android:drawableLeft="@android:drawable/ic_partial_secure"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="text"
             android:drawablePadding="10dp"
+            android:ems="10"
+            android:fontFamily="@font/alike"
+            android:hint="Password"
+            android:inputType="textPassword"
             android:textSize="24sp" />
 
         <EditText
@@ -73,9 +86,47 @@
             android:layout_marginEnd="80dp"
             android:drawablePadding="10dp"
             android:ems="10"
+            android:fontFamily="@font/alike"
             android:hint="Age"
             android:inputType="text"
             android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/goalTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:fontFamily="@font/alike"
+            android:text="Fitness Goal:"
+            android:textSize="24sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="80dp">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:fontFamily="@font/alike"
+                android:text="Reduce Weight"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alike"
+                android:text="Keep Fit"
+                android:textSize="18sp" />
+
+        </RadioGroup>
 
         <Button
             android:id="@+id/registerButton"
@@ -84,8 +135,10 @@
             android:layout_marginLeft="80dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="80dp"
+            android:fontFamily="@font/alike"
             android:text="Register"
             android:textSize="24sp" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -63,35 +63,37 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/SuryaNamaskarImageView"
+                        android:id="@+id/UtkatasanaImageView"
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/surya_namaskar" />
+                        app:srcCompat="@drawable/utkatasana" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/SuryaNamaskarTextView"
+                            android:id="@+id/UtkatasanaTextView"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Surya Namaskar"
+                            android:text="Utkatasana"
                             android:textSize="20sp"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/SuryaNamaskarTextView2"
+                            android:id="@+id/UtkatasanaTextView2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="2 SETS, 5-10 rounds for each set"
+                            android:text="3 SETS, Hold for 1 minute per set"
                             android:textSize="16sp" />
                     </LinearLayout>
+
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -160,56 +162,6 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/UtkatasanaImageView"
-                        android:layout_width="173dp"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/utkatasana" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/UtkatasanaTextView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/alike"
-                            android:text="Utkatasana"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/UtkatasanaTextView2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/alike"
-                            android:text="3 SETS, Hold for 1 minute per set"
-                            android:textSize="16sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/YogaExerciseCard4"
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:layout_margin="20dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="15dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/white"
-                    android:orientation="horizontal">
-
-                    <ImageView
                         android:id="@+id/NavasanaImageView"
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
@@ -243,9 +195,8 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-
             <androidx.cardview.widget.CardView
-                android:id="@+id/YogaExerciseCard5"
+                android:id="@+id/YogaExerciseCard4"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
                 android:layout_margin="20dp"
@@ -292,6 +243,55 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/YogaExerciseCard5"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/SuryaNamaskarImageView"
+                        android:layout_width="173dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/surya_namaskar" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/SuryaNamaskarTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alike"
+                            android:text="Surya Namaskar"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/SuryaNamaskarTextView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alike"
+                            android:text="3 SETS"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
 
             <LinearLayout
                 android:layout_width="match_parent"

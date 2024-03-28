@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/YogaExerciseTitle"
+            android:id="@+id/YogaExerciseTitleView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -37,13 +37,13 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="220dp"
+            android:layout_height="260dp"
             android:layout_margin="6dp"
             android:layout_marginTop="20dp"
             app:cardCornerRadius="15dp">
 
             <TextView
-                android:id="@+id/YogaExerciseDescription"
+                android:id="@+id/YogaExerciseDescriptionView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
