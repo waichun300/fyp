@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "646108375840",
+    "project_id": "finalyearproject-ab7cc",
+    "storage_bucket": "finalyearproject-ab7cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646108375840:android:aebf5ad36b2499d8a58545",
+        "android_client_info": {
+          "package_name": "my.edu.utar.fyp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP9uAXlsinIeJWMJAe7GOifQgYuiSowR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
