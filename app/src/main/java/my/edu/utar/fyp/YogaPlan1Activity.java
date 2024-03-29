@@ -5,16 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Chronometer;
-import android.widget.ImageView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.cardview.widget.CardView;
 
 public class YogaPlan1Activity extends AppCompatActivity {
-    private ImageView suryaNamaskarImageView,virabhadrasanaImageView,utkatasanaImageView,navasanaImageView,phalakasanaImageView;
+    private CardView cardView1, cardView2, cardView3, cardView4, cardView5;
     private Button startButton,stopButton,resetButton;
     private Chronometer timer;
     @Override
@@ -22,17 +18,17 @@ public class YogaPlan1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yoga_plan1);
 
-        suryaNamaskarImageView = findViewById(R.id.SuryaNamaskarImageView);
-        virabhadrasanaImageView = findViewById(R.id.VirabhadrasanaImageView);
-        utkatasanaImageView = findViewById(R.id.UtkatasanaImageView);
-        navasanaImageView = findViewById(R.id.NavasanaImageView);
-        phalakasanaImageView = findViewById(R.id.PhalakasanaImageView);
+        cardView1 = findViewById(R.id.YogaExerciseCard1);
+        cardView2 = findViewById(R.id.YogaExerciseCard2);
+        cardView3 = findViewById(R.id.YogaExerciseCard3);
+        cardView4 = findViewById(R.id.YogaExerciseCard4);
+        cardView5 = findViewById(R.id.YogaExerciseCard5);
         timer = findViewById(R.id.yogaPlan1Timer);
         startButton = findViewById(R.id.yogaPlan1StartButton);
         stopButton = findViewById(R.id.yogaPlan1StopButton);
         resetButton = findViewById(R.id.yogaPlan1ResetButton);
 
-        utkatasanaImageView.setOnClickListener(new View.OnClickListener() {
+        cardView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(YogaPlan1Activity.this, YogaDescriptionActivity.class);
@@ -40,7 +36,7 @@ public class YogaPlan1Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        virabhadrasanaImageView.setOnClickListener(new View.OnClickListener() {
+        cardView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(YogaPlan1Activity.this, YogaDescriptionActivity.class);
@@ -49,7 +45,7 @@ public class YogaPlan1Activity extends AppCompatActivity {
             }
         });
 
-        navasanaImageView.setOnClickListener(new View.OnClickListener() {
+        cardView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(YogaPlan1Activity.this, YogaDescriptionActivity.class);
@@ -57,7 +53,7 @@ public class YogaPlan1Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        phalakasanaImageView.setOnClickListener(new View.OnClickListener() {
+        cardView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(YogaPlan1Activity.this, YogaDescriptionActivity.class);
@@ -66,7 +62,7 @@ public class YogaPlan1Activity extends AppCompatActivity {
             }
         });
 
-        suryaNamaskarImageView.setOnClickListener(new View.OnClickListener() {
+        cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(YogaPlan1Activity.this, YogaDescriptionActivity.class);

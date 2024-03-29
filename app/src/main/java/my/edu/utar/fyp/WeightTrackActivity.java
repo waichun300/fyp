@@ -36,7 +36,7 @@ public class WeightTrackActivity extends AppCompatActivity {
     private Button submitButton;
     private FirebaseFirestore fstore;
     private FirebaseAuth fAuth;
-    private String userId,userName;
+    private String userId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,9 +48,7 @@ public class WeightTrackActivity extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         userId = fAuth.getCurrentUser().getUid();
 
-        Intent intent = getIntent();
-        userName = intent.getStringExtra("username");
-        checkAndUpdateWeek();
+        checkWeek();
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,7 +57,7 @@ public class WeightTrackActivity extends AppCompatActivity {
         });
     }
 
-    private void checkAndUpdateWeek() {
+    private void checkWeek() {
         Calendar currentDate = Calendar.getInstance();
         currentDate.setTime(new Date());
         fstore.collection("Weight_tracking").document(userId).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -94,7 +92,6 @@ public class WeightTrackActivity extends AppCompatActivity {
         if (!weight.isEmpty()) {
             double weightValue = Double.parseDouble(weight);
             Map<String, Object> weightEntry = new HashMap<>();
-            weightEntry.put("username",userName);
             weightEntry.put("date", new Date());
             fstore.collection("Weight_tracking").document(userId).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                         @Override

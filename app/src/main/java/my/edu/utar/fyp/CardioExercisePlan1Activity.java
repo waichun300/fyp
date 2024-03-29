@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Chronometer;
-import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class CardioExercisePlan1Activity extends AppCompatActivity {
-    private ImageView runningImageView,pushUpImageView,jumpRopeImageView,squatJumpImageView,burpeeImageView;
+    private CardView cardView1, cardView2, cardView3, cardView4, cardView5;
     private Button startButton,stopButton,resetButton;
     private Chronometer timer;
     @Override
@@ -18,18 +18,18 @@ public class CardioExercisePlan1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cardio_exercise_plan1);
 
-        runningImageView = findViewById(R.id.RunningImageView);
-        pushUpImageView = findViewById(R.id.PushUpImageView);
-        jumpRopeImageView = findViewById(R.id.JumpRopeImageView);
-        squatJumpImageView = findViewById(R.id.SquatJumpImageView);
-        burpeeImageView = findViewById(R.id.BurpeeImageView);
+        cardView1 = findViewById(R.id.CardioExerciseCard1);
+        cardView2 = findViewById(R.id.CardioExerciseCard2);
+        cardView3 = findViewById(R.id.CardioExerciseCard3);
+        cardView4 = findViewById(R.id.CardioExerciseCard4);
+        cardView5 = findViewById(R.id.CardioExerciseCard5);
         timer = findViewById(R.id.plan1Timer);
-        startButton = findViewById(R.id.plan1startbutton);
-        stopButton = findViewById(R.id.plan1StopButton);
-        resetButton = findViewById(R.id.plan1ResetButton);
+        startButton = findViewById(R.id.cardioPlan1startbutton);
+        stopButton = findViewById(R.id.cardioPlan1StopButton);
+        resetButton = findViewById(R.id.cardioPlan1ResetButton);
 
         stopButton.setEnabled(false);
-        runningImageView.setOnClickListener(new View.OnClickListener() {
+        cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CardioExercisePlan1Activity.this, CardioExerciseDescriptionActivity.class);
@@ -38,7 +38,7 @@ public class CardioExercisePlan1Activity extends AppCompatActivity {
             }
         });
 
-        pushUpImageView.setOnClickListener(new View.OnClickListener() {
+        cardView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CardioExercisePlan1Activity.this, CardioExerciseDescriptionActivity.class);
@@ -46,7 +46,7 @@ public class CardioExercisePlan1Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        jumpRopeImageView.setOnClickListener(new View.OnClickListener() {
+        cardView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CardioExercisePlan1Activity.this, CardioExerciseDescriptionActivity.class);
@@ -54,7 +54,7 @@ public class CardioExercisePlan1Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        squatJumpImageView.setOnClickListener(new View.OnClickListener() {
+        cardView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CardioExercisePlan1Activity.this, CardioExerciseDescriptionActivity.class);
@@ -62,7 +62,7 @@ public class CardioExercisePlan1Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        burpeeImageView.setOnClickListener(new View.OnClickListener() {
+        cardView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CardioExercisePlan1Activity.this, CardioExerciseDescriptionActivity.class);

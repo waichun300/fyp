@@ -31,8 +31,6 @@ public class WeightReviewActivity extends AppCompatActivity {
     private FirebaseFirestore fstore;
     private FirebaseAuth fAuth;
     private String userId;
-    private HashMap<Integer, Double> weightData  = new HashMap<>();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,10 +48,7 @@ public class WeightReviewActivity extends AppCompatActivity {
                     ArrayList<Double> weightList = (ArrayList<Double>) documentSnapshot.get("weight_list");
                     if (weightList != null) {
                         for (int i = 0; i < weightList.size(); i++) {
-                            weightData.put(i + 1, weightList.get(i));
-                        }
-                        for(Integer i : weightData.keySet() ){
-                            addRowToTable(i,weightData.get(i));
+                            addRowToTable(i + 1, weightList.get(i));
                         }
                     } else {
                         Toast.makeText(WeightReviewActivity.this,"No weight data available.",Toast.LENGTH_SHORT).show();

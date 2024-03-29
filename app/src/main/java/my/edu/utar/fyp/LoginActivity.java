@@ -64,26 +64,8 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()) {
-                        String userId = fAuth.getCurrentUser().getUid();
-                        fstore.collection("Users").document(userId).get().addOnSuccessListener(documentSnapshot -> {
-                                    if (documentSnapshot.exists()) {
-                                        String username = documentSnapshot.getString("username");
-                                        if (username != null && !username.isEmpty()) {
-                                            name =  username;
-                                            Intent intent = new Intent(LoginActivity.this, WeightReviewActivity.class);
-                                            intent.putExtra("username", name);
-                                            startActivity(intent);
-                                            Toast.makeText(LoginActivity.this,"Login Successful",Toast.LENGTH_SHORT).show();
-                                        } else {
-                                            Toast.makeText(LoginActivity.this,"User's username is not available",Toast.LENGTH_SHORT).show();
-                                        }
-                                    } else {
-                                        Toast.makeText(LoginActivity.this,"User's document is not available",Toast.LENGTH_SHORT).show();
-                                    }
-                                })
-                                .addOnFailureListener(e -> {
-                                    Toast.makeText(LoginActivity.this,"Error getting user document: " + e.getMessage(),Toast.LENGTH_SHORT).show();
-                                });
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                        Toast.makeText(LoginActivity.this,"Login Successful",Toast.LENGTH_SHORT).show();
                     }else {
                         Toast.makeText(LoginActivity.this,"Login Failed"+task.getException(),Toast.LENGTH_SHORT).show();
                     }

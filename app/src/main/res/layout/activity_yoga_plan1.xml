@@ -116,7 +116,7 @@
                         android:id="@+id/VirabhadrasanaImageView"
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/virabhadrasana" />
+                        app:srcCompat="@drawable/virabhadrasana"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -165,7 +165,7 @@
                         android:id="@+id/NavasanaImageView"
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/navasana" />
+                        app:srcCompat="@drawable/navasana"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -213,7 +213,7 @@
                         android:id="@+id/PhalakasanaImageView"
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/phalakasana" />
+                        app:srcCompat="@drawable/phalakasana"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -262,7 +262,7 @@
                         android:id="@+id/SuryaNamaskarImageView"
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/surya_namaskar" />
+                        app:srcCompat="@drawable/surya_namaskar"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"

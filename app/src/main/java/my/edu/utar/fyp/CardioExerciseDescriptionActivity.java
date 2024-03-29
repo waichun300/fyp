@@ -35,8 +35,10 @@ public class CardioExerciseDescriptionActivity extends AppCompatActivity {
             videoView.setVideoURI(running_uri);
             videoView.start();
             titleView.setText("Running");
-            descriptionView.setText("First, keep your arms compact and relaxed, knees bent, and body tall to maintain proper posture throughout your run."
-                    + "\nThen,land on your midfoot directly underneath your center of mass to avoid overstriding."
+            descriptionView.setText("Running is a cardiovascular exercise which can improve cardiovascular health, burn calories, and improve overall fitness."
+                    + "\n\nInstruction:"
+                    + "\nFirst, keep your arms compact and relaxed, knees bent, and body tall to maintain proper posture throughout your run."
+                    + "\nThen, land on your midfoot directly underneath your center of mass to avoid overstriding."
                     + "\nFinally, lean forward slightly from your ankles, rather than your hips, to move forward more efficiently.");
         } else if (type.equals("push up")) {
             video_path = "android.resource://" + getPackageName() + "/" + R.raw.push_up;
@@ -44,26 +46,32 @@ public class CardioExerciseDescriptionActivity extends AppCompatActivity {
             videoView.setVideoURI(push_up_uri);
             videoView.start();
             titleView.setText("Push Up");
-            descriptionView.setText("First,start in a plank position with your hands shoulder-width apart and palms flat on the floor, making sure your wrists are aligned with your shoulders."
-                    + "\nThen,bend your elbows close to your sides, then lower your body toward the floor by lowering your chest until it's almost touching the ground."
-                    + "\nFinally,push your arms through your palms to extend and return to the starting position, fully straightening your elbows without locking them.");
+            descriptionView.setText("Push up is a versatile body weight exercise that target multiple muscle groups to build upper body strength and endurance."
+                    + "\n\nInstruction:"
+                    + "\nFirst, start in a plank position with your hands shoulder-width apart and palms flat on the floor, making sure your wrists are aligned with your shoulders."
+                    + "\nThen, bend your elbows close to your sides, then lower your body toward the floor by lowering your chest until it's almost touching the ground."
+                    + "\nFinally, push your arms through your palms to extend and return to the starting position, fully straightening your elbows without locking them.");
         } else if (type.equals("jump rope")) {
             video_path = "android.resource://" + getPackageName() + "/" + R.raw.jump_rope;
             Uri jump_rope_uri = Uri.parse(video_path);
             videoView.setVideoURI(jump_rope_uri);
             videoView.start();
             titleView.setText("Jump Rope");
-            descriptionView.setText("First,stay low when jumping to conserve energy and avoid fatigue."
-                    + "\nThen,keep your arms up and in a circular motion at your waist and elbows ensures effective rope rotation."
-                    + "\nFinally,maintain correct body position when jumping rope, with hips over knees and shoulders over hips, like a boxer in the boxing ring.");
+            descriptionView.setText("Jumping rope is a dynamic cardiovascular exercise that engages the entire body while improving coordination, agility, and endurance."
+                    + "\n\nInstruction:"
+                    + "\nFirst, stay low when jumping to conserve energy and avoid fatigue."
+                    + "\nThen, keep your arms up and in a circular motion at your waist and elbows ensures effective rope rotation."
+                    + "\nFinally, maintain correct body position when jumping rope, with hips over knees and shoulders over hips, like a boxer in the boxing ring.");
         }else if (type.equals("squat jump")){
             video_path = "android.resource://" + getPackageName() + "/" + R.raw.squatjump;
             Uri squat_jump_uri = Uri.parse(video_path);
             videoView.setVideoURI(squat_jump_uri);
             videoView.start();
             titleView.setText("Squat Jump");
-            descriptionView.setText("First,lower your body into a squat position while keeping your core tight."
-                    + "\nThen,explode upward with force, extending your legs and hips to jump off the ground."
+            descriptionView.setText("Jump squat is an explosive lower body exercise that combines squats and jumps, which effectively targeting different muscle groups to increase strength and power."
+                    + "\n\nInstruction:"
+                    + "\nFirst, lower your body into a squat position while keeping your core tight."
+                    + "\nThen, explode upward with force, extending your legs and hips to jump off the ground."
                     + "\nFinally, ensure a soft and controlled landing by landing quietly, absorbing impact with bent knees to protect your joints");
         }else if(type.equals("burpee")){
             video_path = "android.resource://" + getPackageName() + "/" + R.raw.burpee;
@@ -71,8 +79,10 @@ public class CardioExerciseDescriptionActivity extends AppCompatActivity {
             videoView.setVideoURI(burpee_uri);
             videoView.start();
             titleView.setText("Burpee");
-            descriptionView.setText("First,bend the knees and place the hands on the floor, then step the legs back individually to assume a plank position."
-                    + "\nThen,lower the chest to the floor, perform a push-up, and then push back up to return to the plank position."
+            descriptionView.setText( "Burpee is dynamic full-body exercise that involve squatting, jumping, and push-ups, which enhances cardiovascular fitness, strength, and endurance."
+                    + "\n\nInstruction:"
+                    + "\nFirst, bend the knees and place the hands on the floor, then step the legs back individually to assume a plank position."
+                    + "\nThen, lower the chest to the floor, perform a push-up, and then push back up to return to the plank position."
                     + "\nFinally, step the legs back in, stand up, and return to the starting position.");
         }
     }
