@@ -71,7 +71,7 @@ public class WeightedExerciseDescriptionActivity extends AppCompatActivity {
                     + "\nWhen doing the Romanian deadlift, stand in the lowest position with your knees slightly bent and your hamstrings and glutes tight."
                     + "\nFinally, flex your abdominal muscles and keep your waist straight. Let the weight drop near your knees and row upward toward your belly button.");
         } else if(type.equals("dumbbell bent over rows")){
-            video_path = "android.resource://" + getPackageName() + "/" + R.raw.dumbbell_bent_over_rows;
+            video_path = "android.resource://" + getPackageName() + "/" + R.raw.dumbbell_deadlift;
             Uri running_uri = Uri.parse(video_path);
             videoView.setVideoURI(running_uri);
             videoView.start();
