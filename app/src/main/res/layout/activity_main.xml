@@ -8,153 +8,149 @@
     android:background="#dddddd"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/mainTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/aclonica"
-            android:text="Main Menu"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardioExerciseCardView"
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:layout_margin="20dp"
-            android:layout_marginTop="20dp"
-            app:cardCornerRadius="15dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/cardioImageView"
-                    android:layout_width="173dp"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/cardio_exercise" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/alike"
-                    android:gravity="center"
-                    android:text="Cardio Exercise Workout Plan"
-                    android:textSize="16sp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/yogaExerciseCardView"
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:layout_margin="20dp"
-            android:layout_marginTop="20dp"
-            app:cardCornerRadius="15dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/yogaImageView"
-                    android:layout_width="173dp"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/yoga_exercise"/>
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/alike"
-                    android:gravity="center"
-                    android:text="Yoga Exercise Workout Plan"
-                    android:textSize="16sp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/weightedExerciseCardView"
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:layout_margin="20dp"
-            android:layout_marginTop="20dp"
-            app:cardCornerRadius="15dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/weightedExerciseImageView"
-                    android:layout_width="173dp"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/dumbbell" />
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/alike"
-                    android:gravity="center"
-                    android:text="Weighted Exercise Workout Plan"
-                    android:textSize="16sp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/weightCardView"
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:layout_margin="20dp"
-            android:layout_marginTop="20dp"
-            app:cardCornerRadius="15dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/weight1ImageView"
-                android:layout_width="173dp"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/body_weight"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/mainTextView"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:fontFamily="@font/alike"
-                android:gravity="center"
-                android:text="Body Weight Tracking"
-                android:textSize="16sp" />
-        </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/aclonica"
+                android:text="Main Menu"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-    </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardioExerciseCardView"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/cardioImageView"
+                        android:layout_width="173dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/cardio_exercise" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/alike"
+                        android:gravity="center"
+                        android:text="Cardio Exercise Workout Plan"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/yogaExerciseCardView"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/yogaImageView"
+                        android:layout_width="173dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/yoga_exercise" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/alike"
+                        android:gravity="center"
+                        android:text="Yoga Exercise Workout Plan"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/weightedExerciseCardView"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/weightedExerciseImageView"
+                        android:layout_width="173dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/dumbbell" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/alike"
+                        android:gravity="center"
+                        android:text="Weighted Exercise Workout Plan"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/weightCardView"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/weight1ImageView"
+                        android:layout_width="173dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/body_weight" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/alike"
+                        android:gravity="center"
+                        android:text="Body Weight Tracking"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

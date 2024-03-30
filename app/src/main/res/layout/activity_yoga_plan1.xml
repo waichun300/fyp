@@ -300,7 +300,7 @@
 
                 <Button
                     android:id="@+id/yogaPlan1StartButton"
-                    android:layout_width="80dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="80dp"
                     android:layout_gravity="center"
                     android:layout_margin="20dp"
@@ -310,7 +310,7 @@
 
                 <Button
                     android:id="@+id/yogaPlan1StopButton"
-                    android:layout_width="80dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="80dp"
                     android:layout_margin="20dp"
                     android:layout_weight="1"
@@ -319,7 +319,7 @@
 
                 <Button
                     android:id="@+id/yogaPlan1ResetButton"
-                    android:layout_width="80dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="80dp"
                     android:layout_margin="20dp"
                     android:layout_weight="1"
