@@ -5,48 +5,37 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#dddddd"
     tools:context=".YogaPlan1Activity">
 
-    <ScrollView
-        android:id="@+id/scrollView"
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#dddddd"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
+            <Chronometer
+                android:id="@+id/yogaPlan1Timer"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/yogaPlan1TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/aclonica"
-                    android:text="Yoga Exercise Plan 1"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-
-                <Chronometer
-                    android:id="@+id/yogaPlan1Timer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/alike"
-                    android:textAlignment="center"
-                    android:textSize="20sp" />
-            </LinearLayout>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alike"
+                android:textAlignment="center"
+                android:textSize="20sp" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/YogaExerciseCard1"
@@ -116,7 +105,7 @@
                         android:id="@+id/VirabhadrasanaImageView"
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/virabhadrasana"/>
+                        app:srcCompat="@drawable/virabhadrasana" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -165,7 +154,7 @@
                         android:id="@+id/NavasanaImageView"
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/navasana"/>
+                        app:srcCompat="@drawable/navasana" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -213,7 +202,7 @@
                         android:id="@+id/PhalakasanaImageView"
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/phalakasana"/>
+                        app:srcCompat="@drawable/phalakasana" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -262,7 +251,7 @@
                         android:id="@+id/SuryaNamaskarImageView"
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/surya_namaskar"/>
+                        app:srcCompat="@drawable/surya_namaskar" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -277,7 +266,7 @@
                             android:fontFamily="@font/alike"
                             android:text="Surya Namaskar"
                             android:textSize="20sp"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/SuryaNamaskarTextView2"

@@ -2,7 +2,6 @@ package my.edu.utar.fyp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,8 +22,8 @@ public class LoginActivity extends AppCompatActivity {
     private Button loginButton;
     private EditText inputEmail,inputPassword;
     private FirebaseAuth fAuth;
-    private FirebaseFirestore fstore;
-    private String name;
+    private String emailPattern = "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,12 +34,11 @@ public class LoginActivity extends AppCompatActivity {
         inputEmail = findViewById(R.id.inputEmail);
         inputPassword = findViewById(R.id.inputPassword);
         fAuth = FirebaseAuth.getInstance();
-        fstore = FirebaseFirestore.getInstance();
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                performLogin();
+                login();
             }
         });
         registerTextView.setOnClickListener(new View.OnClickListener() {
@@ -52,22 +50,22 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    private void performLogin() {
+    private void login() {
         String email = inputEmail.getText().toString();
         String password = inputPassword.getText().toString();
-        if(email.isEmpty()) {
-            inputEmail.setError("Please Enter Email");
+        if(!email.matches(emailPattern)) {
+            inputEmail.setError("Please Enter Valid Email");
         } else if(password.isEmpty()) {
-            inputPassword.setError("Please Enter Password");
+            inputPassword.setError("Please Enter Valid Password");
         } else {
             fAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()) {
-                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
                         Toast.makeText(LoginActivity.this,"Login Successful",Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
                     }else {
-                        Toast.makeText(LoginActivity.this,"Login Failed"+task.getException(),Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this,"Login Failed",Toast.LENGTH_SHORT).show();
                     }
                 }
             });

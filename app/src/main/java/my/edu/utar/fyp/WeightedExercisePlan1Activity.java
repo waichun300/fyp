@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Chronometer;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -12,6 +14,8 @@ import androidx.cardview.widget.CardView;
 public class WeightedExercisePlan1Activity extends AppCompatActivity {
     private CardView cardView1, cardView2, cardView3, cardView4, cardView5;
     private Button startButton,stopButton,resetButton;
+    private ImageView back;
+    private TextView title;
     private Chronometer timer;
 
     @Override
@@ -19,17 +23,26 @@ public class WeightedExercisePlan1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weighted_exercise_plan1);
 
+        back = findViewById(R.id.backButton);
+        title = findViewById(R.id.titleTextView);
         cardView1 = findViewById(R.id.weightedExerciseCard1);
         cardView2 = findViewById(R.id.weightedExerciseCard2);
         cardView3 = findViewById(R.id.weightedExerciseCard3);
         cardView4 = findViewById(R.id.weightedExerciseCard4);
         cardView5 = findViewById(R.id.weightedExerciseCard5);
         timer = findViewById(R.id.weightedExercisePlan1Timer);
-        startButton = findViewById(R.id.weightedExercisePlan1Startbutton);
+        startButton = findViewById(R.id.weightedExercisePlan1StartButton);
         stopButton = findViewById(R.id.weightedExercisePlan1StopButton);
         resetButton = findViewById(R.id.weightedExercisePlan1ResetButton);
+        title.setText("Weighted Exercises Plan 1");
 
-        cardView3.setOnClickListener(new View.OnClickListener() {
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+        cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(WeightedExercisePlan1Activity.this, WeightedExerciseDescriptionActivity.class);
@@ -46,7 +59,7 @@ public class WeightedExercisePlan1Activity extends AppCompatActivity {
             }
         });
 
-        cardView4.setOnClickListener(new View.OnClickListener() {
+        cardView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(WeightedExercisePlan1Activity.this, WeightedExerciseDescriptionActivity.class);
@@ -54,7 +67,7 @@ public class WeightedExercisePlan1Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        cardView5.setOnClickListener(new View.OnClickListener() {
+        cardView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(WeightedExercisePlan1Activity.this, WeightedExerciseDescriptionActivity.class);
@@ -63,7 +76,7 @@ public class WeightedExercisePlan1Activity extends AppCompatActivity {
             }
         });
 
-        cardView1.setOnClickListener(new View.OnClickListener() {
+        cardView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(WeightedExercisePlan1Activity.this, WeightedExerciseDescriptionActivity.class);

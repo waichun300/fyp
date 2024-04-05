@@ -2,6 +2,7 @@ package my.edu.utar.fyp;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -28,18 +29,25 @@ import java.util.concurrent.TimeUnit;
 
 public class WeightReviewActivity extends AppCompatActivity {
     private TableLayout tableLayout;
+    private ImageView back;
+    private TextView titleView;
     private FirebaseFirestore fstore;
     private FirebaseAuth fAuth;
     private String userId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weight_review);
 
+        back = findViewById(R.id.backButton);
+        titleView = findViewById(R.id.titleTextView);
         tableLayout = findViewById(R.id.tableLayout);
         fstore = FirebaseFirestore.getInstance();
         fAuth = FirebaseAuth.getInstance();
         userId = fAuth.getCurrentUser().getUid();
+        titleView.setText("Weight Review");
+
 
         fstore.collection("Weight_tracking").document(userId).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override

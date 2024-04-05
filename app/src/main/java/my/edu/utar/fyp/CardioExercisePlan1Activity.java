@@ -1,10 +1,13 @@
 package my.edu.utar.fyp;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Chronometer;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -12,12 +15,18 @@ import androidx.cardview.widget.CardView;
 public class CardioExercisePlan1Activity extends AppCompatActivity {
     private CardView cardView1, cardView2, cardView3, cardView4, cardView5;
     private Button startButton,stopButton,resetButton;
+    private ImageView back;
+    private TextView titleView;
     private Chronometer timer;
+    private MediaPlayer mediaPlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cardio_exercise_plan1);
 
+        back = findViewById(R.id.backButton);
+        titleView = findViewById(R.id.titleTextView);
         cardView1 = findViewById(R.id.CardioExerciseCard1);
         cardView2 = findViewById(R.id.CardioExerciseCard2);
         cardView3 = findViewById(R.id.CardioExerciseCard3);
@@ -27,8 +36,14 @@ public class CardioExercisePlan1Activity extends AppCompatActivity {
         startButton = findViewById(R.id.cardioPlan1startbutton);
         stopButton = findViewById(R.id.cardioPlan1StopButton);
         resetButton = findViewById(R.id.cardioPlan1ResetButton);
-
+        titleView.setText("Cardio Exercises Plan 1");
         stopButton.setEnabled(false);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
         cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,12 +91,17 @@ public class CardioExercisePlan1Activity extends AppCompatActivity {
                 timer.start();
                 startButton.setEnabled(false);
                 stopButton.setEnabled(true);
+                mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.fitness_bgm);
+                mediaPlayer.start();
+                mediaPlayer.setLooping(true);
             }
         });
         stopButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 timer.stop();
+                mediaPlayer.stop();
+                mediaPlayer.release();
                 resetButton.setEnabled(true);
             }
         });

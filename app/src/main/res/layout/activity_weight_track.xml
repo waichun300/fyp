@@ -8,20 +8,28 @@
     android:background="#dddddd"
     tools:context=".WeightTrackActivity">
 
-    <ScrollView
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
             android:gravity="center"
-            android:layout_gravity="center">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/weightTrackTextView"
@@ -63,6 +71,8 @@
                             android:id="@+id/week1TextView"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="20dp"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
                             android:text="Weight:"
@@ -73,9 +83,9 @@
                             android:id="@+id/weightEditText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:hint="Enter weight"
                             android:inputType="numberDecimal" />
                     </LinearLayout>
                 </LinearLayout>

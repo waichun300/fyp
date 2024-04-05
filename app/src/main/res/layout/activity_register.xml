@@ -23,6 +23,7 @@
                 android:id="@+id/logo"
                 android:layout_width="wrap_content"
                 android:layout_height="201dp"
+                android:layout_marginTop="20dp"
                 android:src="@drawable/fitness_health" />
 
             <TextView
@@ -33,7 +34,7 @@
                 android:text="Register"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="50dp"
+                android:textSize="50sp"
                 android:textStyle="bold|italic" />
 
             <EditText
@@ -44,7 +45,6 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="80dp"
                 android:drawablePadding="10dp"
-                android:ems="10"
                 android:fontFamily="@font/alike"
                 android:hint="UserName"
                 android:inputType="text"
@@ -59,7 +59,6 @@
                 android:layout_marginEnd="80dp"
                 android:drawableLeft="@drawable/baseline_email_24"
                 android:drawablePadding="10dp"
-                android:ems="10"
                 android:fontFamily="@font/alike"
                 android:hint="Email"
                 android:inputType="text"
@@ -74,25 +73,45 @@
                 android:layout_marginEnd="80dp"
                 android:drawableLeft="@android:drawable/ic_partial_secure"
                 android:drawablePadding="10dp"
-                android:ems="10"
                 android:fontFamily="@font/alike"
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:textSize="24sp" />
 
-            <EditText
-                android:id="@+id/registerAge"
+            <TextView
+                android:id="@+id/dateTextView"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="80dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/alike"
+                android:text="Date Of Birth:"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/dateOfBirthTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="80dp"
+                android:fontFamily="@font/alike"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/dateOfBirthPickerButton"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="80dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="80dp"
-                android:drawablePadding="10dp"
-                android:ems="10"
                 android:fontFamily="@font/alike"
-                android:hint="Age"
-                android:inputType="text"
-                android:textSize="24sp" />
+                android:text="Select Date"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/goalTextView"
@@ -140,7 +159,7 @@
                 android:layout_marginRight="80dp"
                 android:fontFamily="@font/alike"
                 android:text="Register"
-                android:textSize="24sp" />
+                android:textSize="20sp" />
         </LinearLayout>
     </ScrollView>
 

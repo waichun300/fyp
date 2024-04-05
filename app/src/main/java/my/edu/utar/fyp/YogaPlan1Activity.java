@@ -5,12 +5,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Chronometer;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 public class YogaPlan1Activity extends AppCompatActivity {
     private CardView cardView1, cardView2, cardView3, cardView4, cardView5;
+    private ImageView back;
+    private TextView titleView;
     private Button startButton,stopButton,resetButton;
     private Chronometer timer;
     @Override
@@ -23,12 +27,22 @@ public class YogaPlan1Activity extends AppCompatActivity {
         cardView3 = findViewById(R.id.YogaExerciseCard3);
         cardView4 = findViewById(R.id.YogaExerciseCard4);
         cardView5 = findViewById(R.id.YogaExerciseCard5);
+        titleView = findViewById(R.id.titleTextView);
+        back = findViewById(R.id.backButton);
         timer = findViewById(R.id.yogaPlan1Timer);
         startButton = findViewById(R.id.yogaPlan1StartButton);
         stopButton = findViewById(R.id.yogaPlan1StopButton);
         resetButton = findViewById(R.id.yogaPlan1ResetButton);
+        titleView.setText("Yoga Exercise Plan 1");
 
-        cardView3.setOnClickListener(new View.OnClickListener() {
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
+        cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(YogaPlan1Activity.this, YogaDescriptionActivity.class);
@@ -44,8 +58,7 @@ public class YogaPlan1Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        cardView4.setOnClickListener(new View.OnClickListener() {
+        cardView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(YogaPlan1Activity.this, YogaDescriptionActivity.class);
@@ -53,7 +66,7 @@ public class YogaPlan1Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        cardView5.setOnClickListener(new View.OnClickListener() {
+        cardView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(YogaPlan1Activity.this, YogaDescriptionActivity.class);
@@ -61,8 +74,7 @@ public class YogaPlan1Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        cardView1.setOnClickListener(new View.OnClickListener() {
+        cardView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(YogaPlan1Activity.this, YogaDescriptionActivity.class);
