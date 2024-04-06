@@ -1,6 +1,7 @@
 package my.edu.utar.fyp;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,6 +18,8 @@ public class WeightedExercisePlan1Activity extends AppCompatActivity {
     private ImageView back;
     private TextView title;
     private Chronometer timer;
+    private MediaPlayer mediaPlayer;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +93,9 @@ public class WeightedExercisePlan1Activity extends AppCompatActivity {
                 timer.start();
                 startButton.setEnabled(false);
                 stopButton.setEnabled(true);
+                mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.fitness_bgm);
+                mediaPlayer.start();
+                mediaPlayer.setLooping(true);
             }
         });
         stopButton.setOnClickListener(new View.OnClickListener() {
@@ -97,6 +103,8 @@ public class WeightedExercisePlan1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 timer.stop();
                 resetButton.setEnabled(true);
+                mediaPlayer.stop();
+                mediaPlayer.release();
             }
         });
         resetButton.setOnClickListener(new View.OnClickListener() {

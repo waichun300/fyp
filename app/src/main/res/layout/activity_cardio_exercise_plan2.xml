@@ -78,7 +78,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="3 SET, Each 1 minutes"
+                            android:text="4 SET, Each 30 seconds"
                             android:textSize="16sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -226,7 +226,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="3 SET, 15 reps per set"
+                            android:text="4 SET, 10 reps per set"
                             android:textSize="16sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -294,6 +294,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="20dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/alike"
                     android:text="Start" />
 
                 <Button
@@ -302,6 +303,7 @@
                     android:layout_height="80dp"
                     android:layout_margin="20dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/alike"
                     android:text="Stop" />
 
                 <Button
@@ -310,6 +312,7 @@
                     android:layout_height="80dp"
                     android:layout_margin="20dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/alike"
                     android:text="Reset" />
             </LinearLayout>
 

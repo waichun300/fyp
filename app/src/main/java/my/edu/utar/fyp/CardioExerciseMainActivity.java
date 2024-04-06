@@ -14,7 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class CardioExerciseMainActivity extends AppCompatActivity {
-    private CardView cardioPlan1CardView,cardioPlan2CardView;
+    private CardView cardioPlan1CardView,cardioPlan2CardView,cardioPlan3CardView;
     private ImageView back;
     private TextView titleView;
 
@@ -27,6 +27,7 @@ public class CardioExerciseMainActivity extends AppCompatActivity {
         titleView = findViewById(R.id.titleTextView);
         cardioPlan1CardView = findViewById(R.id.cardioPlan1ExerciseCardView);
         cardioPlan2CardView = findViewById(R.id.cardioPlan2ExerciseCardView);
+        cardioPlan3CardView = findViewById(R.id.cardioPlan3ExerciseCardView);
         titleView.setText("Cardio Exercise Workout Plans");
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -47,5 +48,12 @@ public class CardioExerciseMainActivity extends AppCompatActivity {
                 startActivity(new Intent(CardioExerciseMainActivity.this, CardioExercisePlan2Activity.class));
             }
         });
+        cardioPlan3CardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(CardioExerciseMainActivity.this, CardioExercisePlan3Activity.class));
+            }
+        });
+
     }
 }

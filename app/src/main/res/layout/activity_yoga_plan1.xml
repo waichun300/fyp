@@ -69,8 +69,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Utkatasana"
-                            android:textSize="20sp"
+                            android:text="Utkatasana (Chair pose)"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -119,8 +119,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Virabhadrasana"
-                            android:textSize="20sp"
+                            android:text="Virabhadrasana (Warrior Pose)"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -168,8 +168,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Navasana"
-                            android:textSize="20sp"
+                            android:text="Navasana (Boat Pose)"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -216,8 +216,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Phalakasana"
-                            android:textSize="20sp"
+                            android:text="Phalakasana (Plank Pose)"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -265,7 +265,7 @@
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
                             android:text="Surya Namaskar"
-                            android:textSize="20sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -294,7 +294,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="20dp"
                     android:layout_weight="1"
-                    android:fontFamily="@font/aclonica"
+                    android:fontFamily="@font/alike"
                     android:text="Start" />
 
                 <Button
@@ -303,7 +303,7 @@
                     android:layout_height="80dp"
                     android:layout_margin="20dp"
                     android:layout_weight="1"
-                    android:fontFamily="@font/aclonica"
+                    android:fontFamily="@font/alike"
                     android:text="Stop" />
 
                 <Button
@@ -312,7 +312,7 @@
                     android:layout_height="80dp"
                     android:layout_margin="20dp"
                     android:layout_weight="1"
-                    android:fontFamily="@font/aclonica"
+                    android:fontFamily="@font/alike"
                     android:text="Reset" />
             </LinearLayout>
 

@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#dddddd"
     tools:context=".WeightedExercisePlan2Activity">
 
     <include
@@ -293,6 +294,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="20dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/alike"
                     android:text="Start" />
 
                 <Button
@@ -301,6 +303,7 @@
                     android:layout_height="80dp"
                     android:layout_margin="20dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/alike"
                     android:text="Stop" />
 
                 <Button
@@ -309,6 +312,7 @@
                     android:layout_height="80dp"
                     android:layout_margin="20dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/alike"
                     android:text="Reset" />
             </LinearLayout>
 

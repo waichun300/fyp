@@ -75,7 +75,6 @@ public class WeightTrackActivity extends AppCompatActivity {
 
                             long diffInMillis = currentDate.getTimeInMillis() - lastInputCal.getTimeInMillis();
                             long diffInDays = TimeUnit.MILLISECONDS.toDays(diffInMillis);
-                            Log.d("WeightTrackActivity", "Difference in days: " + diffInDays); // Log the difference in days
 
                             if (diffInDays < 7) {
                                 Toast.makeText(WeightTrackActivity.this, "You haven't reached the date to input weight yet", Toast.LENGTH_SHORT).show();
@@ -104,16 +103,18 @@ public class WeightTrackActivity extends AppCompatActivity {
                             if (documentSnapshot.exists()) {
                                 ArrayList<Double> weightList = (ArrayList<Double>) documentSnapshot.get("weight_list");
                                 weightList.add(weightValue);
-                                fstore.collection("Weight_tracking").document(userId).update("weight_list", weightList).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                weightEntry.put("weight_list", weightList);
+                                fstore.collection("Weight_tracking").document(userId).update(weightEntry).addOnSuccessListener(new OnSuccessListener<Void>() {
                                             @Override
                                             public void onSuccess(Void aVoid) {
                                                 Toast.makeText(WeightTrackActivity.this, "Weight data added successfully", Toast.LENGTH_SHORT).show();
-                                                weightEditText.setEnabled(true);
+                                                finish();
                                             }
                                         }).addOnFailureListener(new OnFailureListener() {
                                             @Override
                                             public void onFailure(@NonNull Exception e) {
                                                 Toast.makeText(WeightTrackActivity.this, "Failed to add weight data", Toast.LENGTH_SHORT).show();
+                                                finish();
                                             }
                                         });
                             } else {

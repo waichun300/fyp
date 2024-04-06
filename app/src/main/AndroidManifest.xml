@@ -13,6 +13,18 @@
         android:theme="@style/Theme.FYP"
         tools:targetApi="31">
         <activity
+            android:name=".YogaPlan3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CardioExercisePlan3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".NutritionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".YogaPlan2Activity"
+            android:exported="false" />
+        <activity
             android:name=".WeightedExercisePlan2Activity"
             android:exported="false" />
         <activity

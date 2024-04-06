@@ -42,6 +42,7 @@ public class CardioExercisePlan2Activity extends AppCompatActivity {
         resetButton = findViewById(R.id.cardioPlan2ResetButton);
         titleView.setText("Cardio Exercises Plan 2");
         stopButton.setEnabled(false);
+
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,7 +57,6 @@ public class CardioExercisePlan2Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
         cardView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,9 +104,9 @@ public class CardioExercisePlan2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 timer.stop();
+                resetButton.setEnabled(true);
                 mediaPlayer.stop();
                 mediaPlayer.release();
-                resetButton.setEnabled(true);
             }
         });
         resetButton.setOnClickListener(new View.OnClickListener() {

@@ -100,9 +100,9 @@ public class CardioExercisePlan1Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 timer.stop();
+                resetButton.setEnabled(true);
                 mediaPlayer.stop();
                 mediaPlayer.release();
-                resetButton.setEnabled(true);
             }
         });
         resetButton.setOnClickListener(new View.OnClickListener() {

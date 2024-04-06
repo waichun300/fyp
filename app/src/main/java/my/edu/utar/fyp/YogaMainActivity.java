@@ -14,7 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class YogaMainActivity extends AppCompatActivity {
-    private CardView yogaPlan1CardView;
+    private CardView yogaPlan1CardView,yogaPlan2Cardview,yogaPlan3CardView;
     private ImageView back;
     private TextView titleView;
     @Override
@@ -25,6 +25,8 @@ public class YogaMainActivity extends AppCompatActivity {
         back = findViewById(R.id.backButton);
         titleView = findViewById(R.id.titleTextView);
         yogaPlan1CardView = findViewById(R.id.yogaPlan1ExerciseCardView);
+        yogaPlan2Cardview = findViewById(R.id.yogaPlan2ExerciseCardView);
+        yogaPlan3CardView = findViewById(R.id.yogaPlan3ExerciseCardView);
         titleView.setText("Yoga Exercise Workout Plans");
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -37,6 +39,18 @@ public class YogaMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(YogaMainActivity.this,YogaPlan1Activity.class));
+            }
+        });
+        yogaPlan2Cardview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(YogaMainActivity.this,YogaPlan2Activity.class));
+            }
+        });
+        yogaPlan3CardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(YogaMainActivity.this,YogaPlan3Activity.class));
             }
         });
     }
