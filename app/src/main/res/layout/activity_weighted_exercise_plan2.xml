@@ -68,8 +68,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Dumbbell Chest Press"
-                            android:textSize="20sp"
+                            android:text="@string/dumbbell_chest_press"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -78,7 +78,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="3 SET, 10 reps per set"
+                            android:text="3 SETS, 10 reps per set"
                             android:textSize="16sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -117,8 +117,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Dumbbell Bicep Curls"
-                            android:textSize="20sp"
+                            android:text="@string/dumbbell_bicep_curls"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -127,7 +127,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="3 SET, 12 reps per set"
+                            android:text="3 SETS, 12 reps per set"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -166,8 +166,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Dumbbell Triceps Extensions"
-                            android:textSize="20sp"
+                            android:text="@string/dumbbell_tricep_extension"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -176,7 +176,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="3 SET, 12 reps per set"
+                            android:text="2 SETS, 10 reps per set"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -216,8 +216,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Dumbbell Lateral Raises"
-                            android:textSize="20sp"
+                            android:text="@string/dumbbell_lateral_raises"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -226,7 +226,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="3 SET, 12 reps per set"
+                            android:text="4 SETS, 10 reps per set"
                             android:textSize="16sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -265,8 +265,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Dumbbell Russian Twist"
-                            android:textSize="20sp"
+                            android:text="@string/dumbbell_russian_twist"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -275,7 +275,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="3 SET, 12 reps per side"
+                            android:text="2 SETS, 10 reps per side"
                             android:textSize="16sp" />
                     </LinearLayout>
                 </LinearLayout>

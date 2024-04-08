@@ -12,7 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    private CardView cardioCardView,yogaCardView,weightedExerciseCardView,weightCardView;
+    private CardView cardioCardView,yogaCardView,weightedExerciseCardView,weightCardView,nutritionDietCardView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         yogaCardView = findViewById(R.id.yogaExerciseCardView);
         weightedExerciseCardView = findViewById(R.id.weightedExerciseCardView);
         weightCardView = findViewById(R.id.weightCardView);
+        nutritionDietCardView = findViewById(R.id.nutritionCardView);
         cardioCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,6 +44,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,WeightMainActivity.class));
+            }
+        });
+        nutritionDietCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,NutritionActivity.class));
             }
         });
     }

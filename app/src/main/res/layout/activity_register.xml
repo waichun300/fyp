@@ -46,6 +46,7 @@
                 android:layout_marginEnd="80dp"
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/alike"
+                android:ems="10"
                 android:hint="UserName"
                 android:inputType="text"
                 android:textSize="24sp" />
@@ -60,6 +61,7 @@
                 android:drawableLeft="@drawable/baseline_email_24"
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/alike"
+                android:ems="10"
                 android:hint="Email"
                 android:inputType="text"
                 android:textSize="24sp" />
@@ -74,6 +76,7 @@
                 android:drawableLeft="@android:drawable/ic_partial_secure"
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/alike"
+                android:ems="10"
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:textSize="24sp" />

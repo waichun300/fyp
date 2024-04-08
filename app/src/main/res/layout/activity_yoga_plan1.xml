@@ -69,7 +69,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Utkatasana (Chair pose)"
+                            android:text="@string/utkatasana"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -119,7 +119,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Virabhadrasana (Warrior Pose)"
+                            android:text="@string/virabhadrasana"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -168,7 +168,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Navasana (Boat Pose)"
+                            android:text="@string/navasana"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -216,7 +216,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Phalakasana (Plank Pose)"
+                            android:text="@string/phalakasana"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -264,7 +264,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Surya Namaskar"
+                            android:text="@string/surya_namaskar"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 

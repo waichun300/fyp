@@ -68,7 +68,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Jumping Jacks"
+                            android:text="@string/jumping_jack"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -78,7 +78,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="4 SET, Each 30 seconds"
+                            android:text="4 SETS, Each 30 seconds"
                             android:textSize="16sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -117,7 +117,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="High Knees"
+                            android:text="@string/high_knees"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -127,7 +127,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="3 SET, Each 1 minute"
+                            android:text="3 SETS, Each 1 minute"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -166,7 +166,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Mountain Climbers"
+                            android:text="@string/mountain_climbers"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -176,7 +176,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="3 SET, 15 reps per leg"
+                            android:text="3 SETS, 15 reps per leg"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -216,7 +216,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Crunches"
+                            android:text="@string/crunches"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -226,7 +226,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="4 SET, 10 reps per set"
+                            android:text="4 SETS, 10 reps per set"
                             android:textSize="16sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -265,7 +265,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Butt Kick"
+                            android:text="@string/butt_kick"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -275,7 +275,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="3 SET, Each 1 minute"
+                            android:text="3 SETS, Each 1 minute"
                             android:textSize="16sp" />
                     </LinearLayout>
                 </LinearLayout>

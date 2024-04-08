@@ -86,6 +86,7 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
+                            android:ems="10"
                             android:inputType="numberDecimal" />
                     </LinearLayout>
                 </LinearLayout>

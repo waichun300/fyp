@@ -22,7 +22,6 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -39,7 +38,7 @@ public class RegisterActivity extends AppCompatActivity {
     private String emailPattern = "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}";
     private String fitnessGoal = "";
     private FirebaseAuth fAuth;
-    private FirebaseFirestore fstore;
+    private FirebaseFirestore fStore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +52,7 @@ public class RegisterActivity extends AppCompatActivity {
         rb1 = findViewById(R.id.radioButton);
         rb2 = findViewById(R.id.radioButton2);
         fAuth = FirebaseAuth.getInstance();
-        fstore = FirebaseFirestore.getInstance();
+        fStore = FirebaseFirestore.getInstance();
         dateOfBirthButton = findViewById(R.id.dateOfBirthPickerButton);
         registerButton = findViewById(R.id.registerButton);
 
@@ -128,7 +127,7 @@ public class RegisterActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         String userId = fAuth.getCurrentUser().getUid();
                         Toast.makeText(RegisterActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
-                        DocumentReference documentReference = fstore.collection("Users").document(userId);
+                        DocumentReference documentReference = fStore.collection("Users").document(userId);
                         Map<String, Object> user = new HashMap<>();
                         user.put("username", userName);
                         user.put("email", email);
@@ -138,10 +137,11 @@ public class RegisterActivity extends AppCompatActivity {
                             @Override
                             public void onSuccess(Void aVoid) {
                                 startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                                Toast.makeText(RegisterActivity.this, "Registration Successfully. Please Login." + task.getException(), Toast.LENGTH_SHORT).show();
                             }
                         });
                     } else {
-                        Toast.makeText(RegisterActivity.this, "Registration failed" + task.getException(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this, "Registration Failed.", Toast.LENGTH_SHORT).show();
                     }
                 }
             });

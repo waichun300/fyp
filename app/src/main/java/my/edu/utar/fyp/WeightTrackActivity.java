@@ -1,7 +1,6 @@
 package my.edu.utar.fyp;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,7 +29,7 @@ public class WeightTrackActivity extends AppCompatActivity {
     private TextView title;
     private Button submitButton;
     private ImageView back;
-    private FirebaseFirestore fstore;
+    private FirebaseFirestore fStore;
     private FirebaseAuth fAuth;
     private String userId;
     @Override
@@ -42,7 +41,7 @@ public class WeightTrackActivity extends AppCompatActivity {
         submitButton = findViewById(R.id.submitButton);
         back = findViewById(R.id.backButton);
         title = findViewById(R.id.titleTextView);
-        fstore = FirebaseFirestore.getInstance();
+        fStore = FirebaseFirestore.getInstance();
         fAuth = FirebaseAuth.getInstance();
         userId = fAuth.getCurrentUser().getUid();
 
@@ -65,7 +64,7 @@ public class WeightTrackActivity extends AppCompatActivity {
     private void checkWeek() {
         Calendar currentDate = Calendar.getInstance();
         currentDate.setTime(new Date());
-        fstore.collection("Weight_tracking").document(userId).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+        fStore.collection("Weight_tracking").document(userId).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                     @Override
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
                         if (documentSnapshot.exists()) {
@@ -77,7 +76,7 @@ public class WeightTrackActivity extends AppCompatActivity {
                             long diffInDays = TimeUnit.MILLISECONDS.toDays(diffInMillis);
 
                             if (diffInDays < 7) {
-                                Toast.makeText(WeightTrackActivity.this, "You haven't reached the date to input weight yet", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(WeightTrackActivity.this, "You haven't reached the date to input weight yet", Toast.LENGTH_LONG).show();
                                 finish();
                             }
                         }
@@ -97,14 +96,14 @@ public class WeightTrackActivity extends AppCompatActivity {
             double weightValue = Double.parseDouble(weight);
             Map<String, Object> weightEntry = new HashMap<>();
             weightEntry.put("date", new Date());
-            fstore.collection("Weight_tracking").document(userId).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            fStore.collection("Weight_tracking").document(userId).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                         @Override
                         public void onSuccess(DocumentSnapshot documentSnapshot) {
                             if (documentSnapshot.exists()) {
                                 ArrayList<Double> weightList = (ArrayList<Double>) documentSnapshot.get("weight_list");
                                 weightList.add(weightValue);
                                 weightEntry.put("weight_list", weightList);
-                                fstore.collection("Weight_tracking").document(userId).update(weightEntry).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                fStore.collection("Weight_tracking").document(userId).update(weightEntry).addOnSuccessListener(new OnSuccessListener<Void>() {
                                             @Override
                                             public void onSuccess(Void aVoid) {
                                                 Toast.makeText(WeightTrackActivity.this, "Weight data added successfully", Toast.LENGTH_SHORT).show();
@@ -121,7 +120,7 @@ public class WeightTrackActivity extends AppCompatActivity {
                                 ArrayList<Double> weightList = new ArrayList<>();
                                 weightList.add(weightValue);
                                 weightEntry.put("weight_list", weightList);
-                                fstore.collection("Weight_tracking").document(userId).set(weightEntry).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                fStore.collection("Weight_tracking").document(userId).set(weightEntry).addOnSuccessListener(new OnSuccessListener<Void>() {
                                             @Override
                                             public void onSuccess(Void aVoid) {
                                                 Toast.makeText(WeightTrackActivity.this, "Weight data added successfully", Toast.LENGTH_SHORT).show();

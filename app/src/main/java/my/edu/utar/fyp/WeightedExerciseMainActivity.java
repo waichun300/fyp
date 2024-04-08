@@ -11,7 +11,7 @@ import androidx.cardview.widget.CardView;
 
 
 public class WeightedExerciseMainActivity extends AppCompatActivity {
-    private CardView weightedExercisePlan1,weightedExercisePlan2;
+    private CardView weightedExercisePlan1,weightedExercisePlan2, weightedExercisePlan3;
     private ImageView back;
     private TextView titleView;
     @Override
@@ -23,6 +23,7 @@ public class WeightedExerciseMainActivity extends AppCompatActivity {
         titleView = findViewById(R.id.titleTextView);
         weightedExercisePlan1 = findViewById(R.id.weightedPlan1ExerciseCardView);
         weightedExercisePlan2 = findViewById(R.id.weightedPlan2ExerciseCardView);
+        weightedExercisePlan3 = findViewById(R.id.weightedPlan3ExerciseCardView);
         titleView.setText("Weighted Exercise Workout Plans");
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +42,12 @@ public class WeightedExerciseMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(WeightedExerciseMainActivity.this, WeightedExercisePlan2Activity.class));
+            }
+        });
+        weightedExercisePlan3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(WeightedExerciseMainActivity.this, WeightedExercisePlan3Activity.class));
             }
         });
     }

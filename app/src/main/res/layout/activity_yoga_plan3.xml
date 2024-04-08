@@ -69,7 +69,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Natarajasana (Dancer Pose)"
+                            android:text="@string/natarajasana"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -119,7 +119,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Chakravakasana (Cat-Cow Pose)"
+                            android:text="@string/chakravakasana"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -168,7 +168,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Vasisthasana (Side Plank Pose)"
+                            android:text="@string/vasisthasana"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -216,7 +216,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Ardha Chandrasana (Half Moon Pose)"
+                            android:text="@string/ardha_chandrasana"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -264,7 +264,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Mandukasana (Frog Pose)"
+                            android:text="@string/mandukasana"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 

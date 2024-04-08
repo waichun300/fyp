@@ -69,7 +69,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Adho Mukha Svanasana (Downward Dog Pose)"
+                            android:text="@string/adho_mukha_svanasana"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -119,7 +119,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Trikonasana (Triangle Pose)"
+                            android:text="@string/trikonasana"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -168,7 +168,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Bhujangasana (Cobra Pose)"
+                            android:text="@string/bhujangasana"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -216,7 +216,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Vrikshasana (Tree Pose)"
+                            android:text="@string/vrikshasana"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -264,7 +264,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Gomukhasana (Cow Face Pose)"
+                            android:text="@string/gomukhasana"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 

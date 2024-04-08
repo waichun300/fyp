@@ -1,7 +1,6 @@
 package my.edu.utar.fyp;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TableLayout;
@@ -9,12 +8,8 @@ import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -23,16 +18,12 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.concurrent.TimeUnit;
 
 public class WeightReviewActivity extends AppCompatActivity {
     private TableLayout tableLayout;
     private ImageView back;
     private TextView titleView;
-    private FirebaseFirestore fstore;
+    private FirebaseFirestore fStore;
     private FirebaseAuth fAuth;
     private String userId;
 
@@ -44,7 +35,7 @@ public class WeightReviewActivity extends AppCompatActivity {
         back = findViewById(R.id.backButton);
         titleView = findViewById(R.id.titleTextView);
         tableLayout = findViewById(R.id.tableLayout);
-        fstore = FirebaseFirestore.getInstance();
+        fStore = FirebaseFirestore.getInstance();
         fAuth = FirebaseAuth.getInstance();
         userId = fAuth.getCurrentUser().getUid();
         titleView.setText("Weight Review");
@@ -55,7 +46,7 @@ public class WeightReviewActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
-        fstore.collection("Weight_tracking").document(userId).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+        fStore.collection("Weight_tracking").document(userId).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 if (documentSnapshot.exists()) {

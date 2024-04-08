@@ -2,5 +2,343 @@
     <string name="app_name">FYP</string>
     <string name="login">Login</string>
     <string name="name">Name</string>
-    <string name="register">Not have an account?Register here</string>
+    <string name="running">Running</string>
+    <string name="running_description">Running is a cardiovascular exercise which can improve cardiovascular health, burn calories, and improve overall fitness.
+        \n\nInstruction:
+        \nFirst, keep your arms compact and relaxed, knees bent, and body tall to maintain proper posture throughout your run.
+        \nThen, land with your midfoot directly under your center of gravity to avoid overstepping.
+        \nFinally, lean forward slightly from your ankles, rather than your hips, to move forward more efficiently.</string>
+    <string name="push_up">Push Up</string>
+    <string name="push_up_description">Push up is a versatile body weight exercise that target multiple muscle groups to build upper body strength and endurance.
+        \n\nInstruction:
+        \nFirst, start in a plank position with your hands shoulder-width apart and palms flat on the floor, making sure your wrists are aligned with your shoulders.
+        \nThen, bend your elbows close to your sides, then lower your body toward the floor by lowering your chest until it is almost touching the ground.
+        \nFinally, push your arms through your palms to extend and return to the starting position, fully straightening your elbows without locking them.</string>
+    <string name="jump_rope">Jump Rope</string>
+    <string name="jump_rope_description">Jump rope is a dynamic cardiovascular exercise that engages the entire body while improving coordination, agility, and endurance.
+        \n\nInstruction:
+        \nFirst, stay low when jumping to conserve energy and avoid fatigue.
+        \nThen, keep your arms up and in a circular motion at your waist and elbows ensures effective rope rotation.
+        \nFinally, maintain correct body position when jumping rope, with hips over knees and shoulders over hips, like a boxer in the boxing ring.</string>
+    <string name="squat_jump">Squat Jump</string>
+    <string name="squat_jump_description">Squat Jump is an explosive lower body exercise that combines squats and jumps, which effectively targeting different muscle groups to increase strength and power.
+        \n\nInstruction:
+        \nFirst, lower your body into a squat position while keeping your core tight.
+        \nThen, explode upward with force, extending your legs and hips to jump off the ground.
+        \nFinally, ensure a soft and controlled landing by landing quietly, absorbing impact with bent knees to protect your joints
+    </string>
+    <string name="burpee">Burpee</string>
+    <string name="burpee_description">Burpee is dynamic full-body exercise that involve squatting, jumping, and push-ups, which enhances cardiovascular fitness, strength, and endurance
+        \n\nInstruction:
+        \nFirst, bend the knees and place the hands on the floor, then step the legs back individually to assume a plank position.
+        \nThen, lower the chest to the floor, perform a push-up, and then push back up to return to the plank position.
+        \nFinally, step the legs back in, stand up, and return to the starting position.
+    </string>
+    <string name="jumping_jack">Jumping Jack</string>
+    <string name="jumping_jack_description">Jumping jack is a dynamic full-body exercise that can improve cardiovascular endurance, coordination, and overall agility.
+        \n\nInstruction:
+        \nFirst, start standing with arms by your side and legs together.
+        \nThen, jump, spreading your legs slightly wider than shoulder-width apart while raising your arms above your head.
+        \nFinally, return to the starting position and repeat, aiming for as many repetitions.
+    </string>
+    <string name="high_knees">High knees</string>
+    <string name="high_knees_description">High knees are an effective exercise for improving cardiovascular fitness and strengthening lower body muscles.
+        \n\nInstruction:
+        \nFirst, stand upright with feet hip width apart.
+        \nThen, run on the spot bringing the knee ups as high as possible.
+        \nFinally, return to the starting position and repeat, aiming for as many repetitions.
+    </string>
+    <string name="mountain_climbers">Mountain Climbers</string>
+    <string name="mountain_climbers_description">Mountain climbers are a dynamic exercise that targets multiple muscle groups, including the core, shoulders, and legs which help to build overall strength and endurance.
+        \n\nInstruction:
+        \nFirst, ensure your body forms a straight line from head to heels, with shoulders directly over your wrists, engaging your core muscles.
+        \nThen, avoid lifting the hips too high, as it can cause the shoulders to move away from the wrists, limiting the range of motion and reducing core engagement.
+        \nFinally, focus on a controlled rhythm to maximize strength without sacrificing form.
+    </string>
+    <string name="crunches">Crunches</string>
+    <string name="crunches_description">Crunches are an effective exercise for strengthening the abdominal muscles which can help to improve core stability and posture.
+        \n\nInstruction:
+        \nFirst, lie down with your feet hip-distance apart and fingertips touching your heels.
+        \nThen, place your hands behind your head, elbows open, and lift your chest, making sure your lower back is pressed into the mat and your shoulder blades are off the floor.
+        \nFinally, keep your neck neutral and focus on engaging your core muscles to feel the workout along the midline for maximum effectiveness.
+    </string>
+    <string name="butt_kick">Butt Kick</string>
+    <string name="butt_kick_description">Butt kick is a cardio exercise that targets the gluteus and hamstrings while improving cardiovascular health.
+        \n\nInstruction:
+        \nFirst, run in place and aim to kick your heels up to touch your butt with each step.
+        \nThen, maintaining a fast pace and regular breathing and focus on landing on your toes.
+        \nFinally, keeping your chest up, and tightening your abs for proper form and effectiveness.
+    </string>
+    <string name="inchworm">Inchworm</string>
+    <string name="inchworm_description">Inchworm is a training exercise that can strengthen your arms, chest, shoulders, and core.
+    \n\nInstruction:
+    \nFirst, start by standing with your feet hip-width apart, then centering on your hips, place your hands as far in front of you as possible.
+    \nThen, hold the extended plank position briefly to engage your core and shoulders.
+    \nFinally, move your hands back to your feet, optionally standing or back to your toes, and repeat to stretch your hamstrings and warm up your core.
+    </string>
+    <string name="bicycle_crunch">Bicycle Crunch</string>
+    <string name="bicycle_crunch_description">Bicycle crunch is an effective ab exercise which can help tone your midsection and slim your waist.
+        \n\nInstruction:
+        \nFirst, start by lying on your back with your knees bent and lifted off the floor, working your abdominal muscles by pulling your belly button toward your spine.
+        \nThen, place your hands behind your head with your elbows open, making sure to keep them out of your peripheral vision to avoid straining your neck muscles.
+        \nNext, alternate bringing one knee closer to your chest while extending the other leg to fully engage your quadriceps.
+        \nFinally, rotate your torso so that your opposite elbow is closer to your knee and your shoulder blade away from the mat/floor.
+    </string>
+    <string name="lateral_shuffle">Lateral Shuffle</string>
+    <string name="lateral_shuffle_description">Lateral Shuffle is an exercise that strengthens the calves, hamstrings, quadriceps, hip flexors, and gluteal muscles, helping to improve coordination and agility during difficult side-to-side movements.
+        \n\nInstruction:
+        \nFirst, start standing with your feet hip-distance apart and your knees deeply bent.
+        \nThen, placing your hands in front of your chest in a protective position, begin moving your right foot, followed by your left foot.
+        \nFinally, shuffle to the right four steps from right to left, then move left to four steps from left to right, and then continue shuffling from right to left for the required time.
+    </string>
+    <string name="skater_jump">Skater Jump</string>
+    <string name="skater_jump_description">Skater jump is an aerobic exercise that involves jumping in a pattern that transfers body weight from one side to the other, helping to improve balance and coordination.
+        \n\nInstruction:
+        \nFirst, bend your legs slightly and place your arms at your sides, then jump to the right side while extending your left foot back and your left arm forward.
+        \nThen, alternate sides by jumping to the left and switching the position of your legs and arms with each jump.
+        \nFinally, shuffle to the right four steps from right to left, then move left to four steps from left to right, and then continue shuffling from right to left for the required time.
+    </string>
+    <string name="jumping_lunges">Jumping Lunges</string>
+    <string name="jumping_lunges_description">Jumping Lunges are a cardio exercise that targets the gluteus and hamstrings while improving cardiovascular health.
+        \n\nInstruction:
+        \nFirst, run in place and aim to kick your heels up to touch your butt with each step.
+        \nThen, maintaining a fast pace and regular breathing and focus on landing on your toes.
+        \nFinally, keeping your chest up, and tightening your abs for proper form and effectiveness.
+    </string>
+    <string name="dumbbell_squat">Dumbbell Squat</string>
+    <string name="dumbbell_squat_description">Dumbbell squat is an exercise that targets multiple muscle groups including the quadriceps and hamstrings to build lower body strength and stability.
+        \n\nInstruction:
+        \nFirst, start by standing up straight, holding a dumbbell in each hand with your palms facing your legs.
+        \nSecondly, keep your feet shoulder-width apart, toes slightly outward, and always keep your back straight and your head up.
+        \nFinally, slowly lower your torso by bending your knees until your thighs are parallel to the floor, then exhale and push through your heels to return to the starting position.
+    </string>
+    <string name="dumbbell_lunges">Dumbbell Lunges</string>
+    <string name="dumbbell_lunges_description">Dumbbell lunge is a unilateral lower body exercise that improves lower body strength and stability.
+        \n\nInstruction:
+        \nFirst, hold dumbbells at shoulder width with maintain proper posture.
+        \nThen, take step forward with one leg, lowering your body until your front thigh is parallel to the ground.
+        \nFinally, ensure your front knee doesn't extend past your toes, then push through your feet to return to standing.
+    </string>
+    <string name="dumbbell_shoulder_press">Dumbbell Shoulder Press</string>
+    <string name="dumbbell_shoulder_press_description">Dumbbell shoulder press is a strength training exercise that targets the deltoid muscles of the shoulders.
+        \n\nInstruction:
+        \nFirst, sit on a bench with back support and hold a dumbbell in each hand at shoulder height, palms facing forward.
+        \nThen, exhale as you push the dumbbells up until they touch the top, then inhale as you lower the dumbbells to shoulder height.
+        \nFinally, repeat for the desired number of repetitions and ensure controlled movement and proper wrist rotation throughout.
+    </string>
+    <string name="dumbbell_bent_over_rows">Dumbbell Bent Over Rows</string>
+    <string name="dumbbell_bent_over_rows_description">Dumbbell bent over row is an exercise that primarily targets the back muscles to strengthen them and improve overall upper body strength.
+        \n\nInstruction:
+        \nFirst, choose a suitable grip. An overhand grip is more recommended because it reduces stress on your lower back during your repetitions.
+        \nThen, stand in the bottom position of the Romanian deadlift with your knees slightly bent and your hamstrings and glutes tight.
+        \nFinally, flex your abdominal muscles and keep your waist straight. Let the weight drop near your knees and row upward toward your belly button.
+    </string>
+    <string name="dumbbell_deadlift">Dumbbell Deadlift</string>
+    <string name="dumbbell_deadlift_description">Dumbbell deadlift is an exercise that targets the hamstrings and glutes which can emphasizing hip hinge movement.
+        \n\nInstruction:
+        \nFirst, hold a dumbbell in each hand, palms facing your body, and stand with your feet shoulder-width apart.
+        \nThen, bend your legs and keep your back straight, and slowly lower the dumbbells toward the floor without rounding your back.
+        \nPause where you feel the stretch in your hamstrings.
+        \nFinally, return to standing, squeezing your glutes and keeping your core tight, lowering yourself into the rack as low as possible.
+    </string>
+    <string name="dumbbell_chest_press">Dumbbell Chest Press</string>
+    <string name="dumbbell_chest_press_description">Dumbbell chest presses are an exercise that target the pectoral muscles and help to improve stability during daily activities and athletic performance.
+        \n\nInstruction:
+        \nFirst, start by tilting your shoulders down and back to engage your chest muscles and create stability by pressing your shoulder blades into the bench.
+        \nThen, push your chest outward while drawing your elbows in at a 45-60 degree angle to minimize the risk of shoulder injury and ensure proper activation of the chest muscles.
+        \nFinally, maintain this position throughout the entire exercise to effectively target the chest while reducing the risk of injury.
+    </string>
+    <string name="dumbbell_bicep_curls">Dumbbell Bicep Curls</string>
+    <string name="dumbbell_bicep_curls_description">Dumbbell bicep curls are an exercise that targets the biceps arms and help to improve overall arm strength and definition.
+        \n\nInstruction:
+        \nFirst, start with your hands in a neutral position and your feet on the ground while keeping your knees and elbows relaxed.
+        \nThen lift both dumbbells simultaneously, squeezing your upper biceps and controlling the negative motion as you lower the weight.
+        \nFinally, focus on exhaling during the lifting and lowering phases to maximize the effectiveness of the exercise.
+    </string>
+    <string name="dumbbell_tricep_extension">Dumbbell Tricep Extension</string>
+    <string name="dumbbell_tricep_extension_description">Dumbbell tricep extension is an exercise that targets the tricep muscles which promote muscle growth and improved arm strength.
+        \n\nInstruction:
+        \nFirst, start with a dumbbell behind your head and stretch upward while squeezing the tops of your triceps.
+        \nThen, maintain control throughout the movement, focusing on stretching your triceps on the way down and squeezing it at the top while exhaling during the exertion phase.
+        \nFinally, avoid swinging or using dumbbells that are too heavy to avoid hitting yourself.
+    </string>
+    <string name="dumbbell_lateral_raises">Dumbbell Lateral Raises</string>
+    <string name="dumbbell_lateral_raises_description">Dumbbell lateral raise is an exercise that targets the deltoid muscles, specifically the outer deltoid muscles and help to build shoulder stability and definition.
+        \n\nInstruction:
+        \nFirst, stand with your feet hip-width apart.
+        \nThen, raise the dumbbells to your sides, at shoulder height, and reverse the movement in a controlled motion.
+        \nFinally, lift your chest, shoulders back, and squeeze your abs.
+    </string>
+    <string name="dumbbell_russian_twist">Dumbbell Russian Twist</string>
+    <string name="dumbbell_russian_twist_description">Dumbbell russian twist is an exercise that targets the oblique muscles and helps strengthen and sculpt your waistline.
+        \n\nInstruction:
+        \nFirst, sit down with your feet slightly raised and your back tilted back.
+        \nThen, hold the dumbbells with both hands and twist them left and right.
+        \nFinally, keep your legs still and your neck neutral as you twist, and don't forget to exhale as you twist.
+    </string>
+    <string name="dumbbell_arnold_press">Dumbbell Arnold Press</string>
+    <string name="dumbbell_arnold_press_description">Dumbbell Arnold Press is an upper body strength exercise that builds shoulder, arm, and core strength.
+        \n\nInstruction:
+        \nFirst, place your hands in front of your face, shoulders aligned with your ears.
+        \nThen, slowly lower the weight and return it to the original position, engaging your core muscles throughout.
+        \nNext, avoid flaring your belly outward and maintain control without using power.
+        \nFinally, repeat the movement slowly and with control for best results.
+    </string>
+    <string name="dumbbell_tricep_kickback">Dumbbell Tricep Kickback</string>
+    <string name="dumbbell_tricep_kickback_description">Dumbbell tricep kickback is an exercise that uses dumbbells to strengthen the triceps muscles of your arms.
+        \n\nInstruction:
+        \nFirst, place your left knee and left hand on a bench beneath your shoulders, keeping your back flat.
+        \nThen, raise the dumbbells so your elbows are level with your shoulders and extend your arms before returning to the starting position.
+        \nFinally, remember to keep your elbows at the same level as your shoulders throughout the exercise.
+    </string>
+    <string name="dumbbell_front_raise">Dumbbell Front Raise</string>
+    <string name="dumbbell_front_raise_description">The dumbbell front raise is a shoulder flexion isolation exercise that can help you build strength and definition in the front and sides of your shoulders.
+        \n\nInstruction:
+        \nFirst, start by making sure the dumbbells are a few inches in front of you.
+        \nThen, use your elbows to guide the dumbbells upward, keeping your hands relaxed as if they were just latches.
+        \nNext, hold the dumbbells in front of you throughout the movement, about three to four inches away from your body.
+        \nFinally, lower the dumbbells back to their original position in a controlled manner.
+    </string>
+    <string name="dumbbell_renegade_row">Dumbbell Renegade Row</string>
+    <string name="dumbbell_renegade_row_description">Dumbbell Renegade Row is a combination of planks and dumbbell rows designed to strengthen your upper body, back, and biceps.
+        \n\nInstruction:
+        \nFirst, start in a plank position with your hands on two dumbbells slightly wider than shoulder-width apart and feet wider than shoulder-width apart for stability.
+        \nThen, keeping your core engaged and your body in a straight line from head to heels to prevent any rotation.
+        \nNext, pull one dumbbell toward the side of your hip, focusing on retracting your shoulder blades and pulling toward your lower buttocks, rather than toward your arms or shoulders.
+        \nFinally, alternate sides, maintaining control and stability throughout the movement.
+    </string>
+    <string name="dumbbell_reverse_fly">Dumbbell Reverse Fly</string>
+    <string name="dumbbell_reverse_fly_description">Dumbbell reverse fly is an exercise you can perform with dumbbells that strengthen the muscles of your upper back, help balance shoulder strength, and help protect your shoulders from injury.
+        \n\nInstruction:
+        \nFirst, start with hinged hips, keeping your knees slightly bent and holding a dumbbell in each hand, palms facing each other.
+        \nThen, let the dumbbells hang in front of you, keeping your elbows slightly bent.
+        \nNext, keeping your back straight and your core tight, raise the dumbbells to your sides until your arms are parallel to the floor, squeezing your shoulder blades together at the top of the movement.
+        \nFinally, lower the dumbbells slowly and under control, allowing your shoulder blades to spread apart as you return to the starting position.
+    </string>
+    <string name="utkatasana">Utkatasana (Chair pose)</string>
+    <string name="utkatasana_description">Utkatasana is a standing yoga pose that mimics the shape of sitting in an imaginary chair.
+        \n\nInstruction:
+        \nFirst, stand in mountain pose with feet together or slightly apart, engaging inner thighs and lifting arms overhead with external rotation.
+        \nThen, keep your spine neutral as you bend your knees to a comfortable position, focusing on lifting your chest and squeezing your inner thighs together.
+        \nFinally, keep your chest forward or slightly lifted throughout the movement.
+    </string>
+    <string name="virabhadrasana">Virabhadrasana (Warrior Pose)</string>
+    <string name="virabhadrasana_description">Virabhadrasana is a group of standing yoga poses that symbolize the fierce warrior Virabhadra from Hindu mythology.
+        \n\nInstruction:
+        \nVirabhadrasana poses can help to strengthen the legs, core, and arms while improving balance, stability, and focus.
+        \nThere are three main variations of Virabhadrasana: Virabhadrasana I, II, and III.
+        \n\nVirabhadrasana I:
+        \nFirst, start in Mountain Pose, step your left leg back into a lunge and place your right knee over your right ankle.
+        \nThen, align your hips by folding your tailbone down and turning your back heels inward at a 45-degree angle.
+        \nFinally, engage your core, sink deeper into your front leg, and raise your arms overhead, wrapping your triceps in them and aligning your biceps between your cheeks and ears.
+        \n\nVirabhadrasana II:
+        \nFirst, start in Mountain Pose, then step your left foot back and transition into a high lunge.
+        \nThen, open your hips and extend your arms horizontally, aligning your front knee with your ankle and spine vertically.
+        \nFinally, relax your shoulders, stretch out your fingers, and turn your head to stare at the middle finger in front of you.
+        \n\nVirabhadrasana III:
+        \nFirst, stand with your feet together, hands on your heart center, and focus on a fixed point.
+        \nThen, fold forward and extend one leg behind you, forming a straight line with your torso and raised leg.
+        \nFinally, engage your quads and inner thighs to root down through your standing feet while maintaining balance and alignment.
+    </string>
+    <string name="navasana">Navasana (Boat Pose)</string>
+    <string name="navasana_description">Navasana is a core-strengthening yoga pose shaped like a boat.
+        \n\nInstruction:
+        \nFirst, begin seated with legs together and knees bent, placing hands behind you and lifting onto fingertips, while lifting chest and engaging core.
+        \nThen, lean back slightly, balancing on the back of your sitz bones, and lift legs up, pointing toes and squeezing inner thighs together.
+        \nOptionally, extend arms forward and straighten legs while lifting chest and gaze for an added challenge.
+    </string>
+    <string name="phalakasana">Phalakasana (Plank Pose)</string>
+    <string name="phalakasana_description">Phalakasana is a foundational yoga posture that primarily strengthens the core, shoulders, arms, and wrists.
+        \n\nInstruction:
+        \nFirst, start in a tabletop position with your hands under your shoulders and your knees aligned under your hips.
+        \nThen, engage your triceps to rotate your elbows back while pressing your hands down and squeezing them together to activate your chest.
+        \nFinally, bend your knees and extend your legs, extending your shoulder blades, squeezing your inner thighs, and engaging your core while maintaining a neutral gaze.
+    </string>
+    <string name="surya_namaskar">Surya Namaskar (Sun Salutation)</string>
+    <string name="surya_namaskar_description">Surya Namaskar is a sequence of yoga postures performed in a fluid motion.
+        \n\nInstruction:
+        \nFirst, stretch your hands upward in Namaskar mudra, then forward and downward.
+        \nStep your right leg back and lower your knee, transitioning into the equestrian position ashas sanchalan.
+        \nThen, get into a plank position with your chest between your hands, then inhale and slide forward into Upward Dog.
+        \nFinally, return to the equestrian position, swing your legs forward, and then gently stand up, arching your back.
+    </string>
+    <string name="adho_mukha_svanasana">Adho Mukha Svanasana (Downward Dog Pose)</string>
+    <string name="adho_mukha_svanasana_description">Adho mukha svanasana is part arm balance, part inversion, and part restorative pose that stretches and strengthens various parts of the body.
+        \n\nInstruction:
+        \nFirst, start on your hands and knees. Place your hands at the top of the mat, shoulder distance apart.
+        \nExternally rotate your arms by wrapping your triceps back, squeeze your hands together to activate your chest and lift knees and hips up and back.
+        \nThen, create extension in your spine by lifting up from your pelvis and pressing into your hands as well as wrap your triceps down to create space across your back.
+        \nFinally, lift your heels slightly and turn them out so they are aligned behind your toes and squeeze your inner thighs together.
+    </string>
+    <string name="trikonasana">Trikonasana (Triangle Pose)</string>
+    <string name="trikonasana_description">Trikonasana is a yoga posture that helps in stretching the legs and strengthening body muscles as well as activates the body core, which further stimulates the digestive organs.
+        \n\nInstruction:
+        \nFirst, make sure the toes of the front foot are forward and the toes of the back foot are at an angle of about 45 degrees, focusing on lengthening the lower side of the body.
+        \nThen, if you need support, use a block and place it on the outside of your ankles, extending your upper arms upward while keeping your chest aligned with your hips and lifting your chest.
+        \nFinally, keep a straight line from wrist to wrist as you turn your body.
+    </string>
+    <string name="bhujangasana">Bhujangasana (Cobra Pose)</string>
+    <string name="bhujangasana_description">Bhujangasana is a yoga pose that stretches and strengthens the abdominal muscles and is especially beneficial for toning the uterine muscles.
+        \n\nInstruction:
+        \nFirst, lie on your stomach, place your hands under your shoulders, extend your legs behind you, and press your toes into the ground.
+        \nThen, using core and hip strength, lift your chest about three inches off the floor, making sure your head is aligned with your spine and your elbows are squeezed back.
+        \nFinally, keep lifting while squeezing your thighs together and opening your chest, then gradually relax.
+    </string>
+    <string name="vrikshasana">Vrikshasana (Tree Pose)</string>
+    <string name="vrikshasana_description">Vrikshasana is a yoga pose that strengthens the legs and core and helps build better balance.
+        \n\nInstruction:
+        \nFirst, stand with your feet together, then lift one leg and grab your knee for balance.
+        \nThen, firmly root your standing foot and place your lifted foot on the inner thigh of your standing leg, keeping your foot flexed and pressing the sole of your foot into your thigh.
+        \nFinally, place your hands over your heart center or extend your arms above your head while maintaining balance and stability.
+    </string>
+    <string name="gomukhasana">Gomukhasana (Cow Face Pose)</string>
+    <string name="gomukhasana_description">Gomukhasana is a yoga pose that is great for those who frequently slouch or simply want to improve their posture.
+        \n\nInstruction:
+        \nFirst, begin sitting with one heel on the outside of your opposite hip and your knees stacked together.
+        \nKeeping your spine straight, gently pull one arm behind your back, reaching toward your opposite shoulder blade.
+        \nThen, reach up with your other arm and bend your elbow, then rotate it inward and place it behind your back to clasp your hands or use a support to help if needed.
+        \nFinally, lift your chest and fold your legs forward for a deeper stretch.
+    </string>
+    <string name="natarajasana">Natarajasana (Dancer Pose)</string>
+    <string name="natarajasana_description">Natarajasana is a beautiful balancing pose that opens your entire front body which can strengthens your muscles, as well as your focus and your balance.
+        \n\nInstruction:
+        \nFirst, stand with your feet together and pull one leg toward your chest, rooting down through the standing foot.
+        \nUse your quadriceps and gluteal muscles to stabilize your pelvis as you lower your bent knee into alignment with your standing leg.
+        \nThen, begin to lean forward, extending your raised foot behind you and holding it with your free arm.
+        \nAlternatively, use an inverted grip, placing your elbows on the outside of your legs and grabbing the edge of your feet with your pinky toes.
+        \nFinally, rotate your chest forward and raise your elbows toward the sky, then reach your free arm up behind you, kicking your feet to push your chest forward and straightening your standing leg for a deep stretch.
+    </string>
+    <string name="chakravakasana">Chakravakasana (Cat-Cow Pose)</string>
+    <string name="chakravakasana_description">Chakravakasana is an opening stretch that targets your entire back body which can strengthen the spine.
+        \n\nInstruction:
+        \nFirst, start on all fours, making sure your shoulders are aligned with your wrists and your knees are aligned with your hips.
+        \nThen inhale into Cow Pose, arching your back and raising your gaze.
+        \nNext exhale into Cat Pose, rounding your spine and tightening your chin.
+        \nFinally, rotate your chest forward and raise your elbows toward the sky, then reach your free arm up behind you, kicking your feet to push your chest forward and straightening your standing leg for a deep stretch.
+    </string>
+    <string name="vasisthasana">Vasisthasana (Side Plank Pose)</string>
+    <string name="vasisthasana_description">Vasisthasana is an excellent exercise for strengthening the oblique abdominal muscles.
+        \n\nInstruction:
+        \nFirst, start in a plank position with your hands under your shoulders and your triceps rotated back.
+        \nThen, with your feet together, squeeze your inner thighs and roll to the outer edge of one foot.
+        \nNext, stack your hips vertically together and align your shoulders while raising one arm above your head.
+        \nFinally, rotate the bottom arm outward, press to activate the side body, and look down, forward, or up toward the sky.
+    </string>
+    <string name="ardha_chandrasana">Ardha Chandrasana (Half Moon Pose)</string>
+    <string name="ardha_chandrasana_description">Ardha Chandrasana is a standing balance that activates many different muscle groups, strengthening your core and lower body and relieving stress.
+        \n\nInstruction:
+        \nFirst, start in a side angle position, then place one hand on your back hip and reach forward with the other hand.
+        \nThen, lift your front leg and lift your back leg, flexing your foot with your toes facing the side of the mat.
+        \nNext, root down through the corners of your standing feet, lift your kneecaps, tighten your outer hips toward your midline, and make sure the fingertips of your lower arms are under your shoulders.
+        \nFinally, gaze down and extend your upper arms toward the sky, forming a long line of energy between your lower and upper hands.
+    </string>
+    <string name="mandukasana">Mandukasana (Frog Pose)</string>
+    <string name="mandukasana_description">Mandukasana is a yoga pose that targets your core, hips, and inner thighs which can strength the back muscles.
+        \n\nInstruction:
+        \nFirst, start in a hands and knees position, spreading your knees as far apart as your flexibility allows.
+        \nThen, rotate your toes outward, opening your feet above knee-width.
+        \nTo increase the stretch, move your hips back toward your heels and lower into your forearms.
+        \nFinally, look down or slightly forward to maintain alignment.
+    </string>
+
 </resources>

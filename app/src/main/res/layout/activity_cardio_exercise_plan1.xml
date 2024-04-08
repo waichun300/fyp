@@ -68,7 +68,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Running"
+                            android:text="@string/running"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -78,7 +78,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="2 SET, Each 5 minutes"
+                            android:text="2 SETS, Each 5 minutes"
                             android:textSize="16sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -117,7 +117,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Push up"
+                            android:text="@string/push_up"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -127,7 +127,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="3 SET, 12 reps per set"
+                            android:text="3 SETS, 12 reps per set"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -166,7 +166,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Jump Rope"
+                            android:text="@string/jump_rope"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -176,7 +176,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="3 SET, Each 2 minutes"
+                            android:text="3 SETS, Each 2 minutes"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -216,7 +216,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Squat Jump"
+                            android:text="@string/squat_jump"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -226,7 +226,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="3 SET, 12 reps per set"
+                            android:text="3 SETS, 12 reps per set"
                             android:textSize="16sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -265,7 +265,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="Burpee"
+                            android:text="@string/burpee"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -275,7 +275,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/alike"
-                            android:text="3 SET, 10 reps per set"
+                            android:text="3 SETS, 10 reps per set"
                             android:textSize="16sp" />
                     </LinearLayout>
                 </LinearLayout>
