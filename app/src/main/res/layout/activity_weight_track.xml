@@ -68,7 +68,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/week1TextView"
+                            android:id="@+id/weekWeightTextView"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"

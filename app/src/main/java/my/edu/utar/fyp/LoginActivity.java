@@ -15,13 +15,15 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class LoginActivity extends AppCompatActivity {
     private TextView registerTextView;
     private Button loginButton;
     private EditText inputEmail,inputPassword;
-    private FirebaseAuth fAuth;
+    private FirebaseAuth firebaseAuth;
+    private FirebaseUser firebaseUser;
     private String emailPattern = "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}";
 
     @Override
@@ -33,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.loginButton);
         inputEmail = findViewById(R.id.inputEmail);
         inputPassword = findViewById(R.id.inputPassword);
-        fAuth = FirebaseAuth.getInstance();
+        firebaseAuth = FirebaseAuth.getInstance();
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,10 +57,10 @@ public class LoginActivity extends AppCompatActivity {
         String password = inputPassword.getText().toString();
         if(!email.matches(emailPattern)) {
             inputEmail.setError("Please Enter Valid Email");
-        } else if(password.isEmpty()) {
+        } else if(password.isEmpty() || password.length()<6) {
             inputPassword.setError("Please Enter Valid Password");
         } else {
-            fAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()) {

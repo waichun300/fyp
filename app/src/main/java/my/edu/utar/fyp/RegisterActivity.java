@@ -33,10 +33,10 @@ public class RegisterActivity extends AppCompatActivity {
 
     private EditText registerUserName, registerEmail, registerPassword;
     private TextView dateOfBirth;
-    private Button registerButton, dateOfBirthButton;
+    private Button dateOfBirthButton,registerButton, backToLogin;
     private RadioButton rb1, rb2;
     private String emailPattern = "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}";
-    private String fitnessGoal = "";
+    private String fitnessGoal;
     private FirebaseAuth fAuth;
     private FirebaseFirestore fStore;
 
@@ -55,15 +55,8 @@ public class RegisterActivity extends AppCompatActivity {
         fStore = FirebaseFirestore.getInstance();
         dateOfBirthButton = findViewById(R.id.dateOfBirthPickerButton);
         registerButton = findViewById(R.id.registerButton);
+        backToLogin = findViewById(R.id.backToLoginButton);
 
-        Drawable userIcon = getResources().getDrawable(R.drawable.user_icon);
-        BitmapDrawable bitmapDrawable = (BitmapDrawable) userIcon;
-        Bitmap bitmap = bitmapDrawable.getBitmap();
-        int desiredWidth = 60;
-        int desiredHeight = 60;
-        Bitmap resizedBitmap = Bitmap.createScaledBitmap(bitmap, desiredWidth, desiredHeight, true);
-        Drawable resizedUserIcon = new BitmapDrawable(getResources(), resizedBitmap);
-        registerUserName.setCompoundDrawablesWithIntrinsicBounds(resizedUserIcon, null, null, null);
 
         dateOfBirthButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,6 +80,12 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 registration();
+            }
+        });
+        backToLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
             }
         });
     }
@@ -126,7 +125,6 @@ public class RegisterActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         String userId = fAuth.getCurrentUser().getUid();
-                        Toast.makeText(RegisterActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
                         DocumentReference documentReference = fStore.collection("Users").document(userId);
                         Map<String, Object> user = new HashMap<>();
                         user.put("username", userName);
@@ -137,7 +135,7 @@ public class RegisterActivity extends AppCompatActivity {
                             @Override
                             public void onSuccess(Void aVoid) {
                                 startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
-                                Toast.makeText(RegisterActivity.this, "Registration Successfully. Please Login." + task.getException(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegisterActivity.this, "Registration Successfully. Please Login.", Toast.LENGTH_SHORT).show();
                             }
                         });
                     } else {

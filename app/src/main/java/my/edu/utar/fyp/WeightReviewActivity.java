@@ -23,8 +23,8 @@ public class WeightReviewActivity extends AppCompatActivity {
     private TableLayout tableLayout;
     private ImageView back;
     private TextView titleView;
-    private FirebaseFirestore fStore;
-    private FirebaseAuth fAuth;
+    private FirebaseFirestore firebaseStore;
+    private FirebaseAuth firebaseAuth;
     private String userId;
 
     @Override
@@ -35,9 +35,9 @@ public class WeightReviewActivity extends AppCompatActivity {
         back = findViewById(R.id.backButton);
         titleView = findViewById(R.id.titleTextView);
         tableLayout = findViewById(R.id.tableLayout);
-        fStore = FirebaseFirestore.getInstance();
-        fAuth = FirebaseAuth.getInstance();
-        userId = fAuth.getCurrentUser().getUid();
+        firebaseStore = FirebaseFirestore.getInstance();
+        firebaseAuth = FirebaseAuth.getInstance();
+        userId = firebaseAuth.getCurrentUser().getUid();
         titleView.setText("Weight Review");
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -46,7 +46,7 @@ public class WeightReviewActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
-        fStore.collection("Weight_tracking").document(userId).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+        firebaseStore.collection("Weight_tracking").document(userId).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 if (documentSnapshot.exists()) {

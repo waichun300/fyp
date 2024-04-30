@@ -202,7 +202,7 @@
                         android:id="@+id/CrunchesImageView"
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/crushes" />
+                        app:srcCompat="@drawable/crunches" />
 
                     <LinearLayout
                         android:layout_width="match_parent"

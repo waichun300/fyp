@@ -3,6 +3,7 @@ package my.edu.utar.fyp;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Chronometer;
@@ -90,6 +91,7 @@ public class WeightedExercisePlan1Activity extends AppCompatActivity {
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                timer.setBase(SystemClock.elapsedRealtime());
                 timer.start();
                 startButton.setEnabled(false);
                 stopButton.setEnabled(true);
@@ -110,6 +112,7 @@ public class WeightedExercisePlan1Activity extends AppCompatActivity {
         resetButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                timer.setBase(SystemClock.elapsedRealtime());
                 timer.setText("00:00");
                 startButton.setEnabled(true);
                 stopButton.setEnabled(false);

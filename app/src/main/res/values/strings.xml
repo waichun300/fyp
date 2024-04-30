@@ -25,10 +25,10 @@
         \n\nInstruction:
         \nFirst, lower your body into a squat position while keeping your core tight.
         \nThen, explode upward with force, extending your legs and hips to jump off the ground.
-        \nFinally, ensure a soft and controlled landing by landing quietly, absorbing impact with bent knees to protect your joints
+        \nFinally, ensure a soft and controlled landing by landing quietly, absorbing impact with bent knees to protect your joints.
     </string>
     <string name="burpee">Burpee</string>
-    <string name="burpee_description">Burpee is dynamic full-body exercise that involve squatting, jumping, and push-ups, which enhances cardiovascular fitness, strength, and endurance
+    <string name="burpee_description">Burpee is dynamic full-body exercise that involve squatting, jumping, and push-ups, which enhances cardiovascular fitness, strength, and endurance.
         \n\nInstruction:
         \nFirst, bend the knees and place the hands on the floor, then step the legs back individually to assume a plank position.
         \nThen, lower the chest to the floor, perform a push-up, and then push back up to return to the plank position.
@@ -41,7 +41,7 @@
         \nThen, jump, spreading your legs slightly wider than shoulder-width apart while raising your arms above your head.
         \nFinally, return to the starting position and repeat, aiming for as many repetitions.
     </string>
-    <string name="high_knees">High knees</string>
+    <string name="high_knees">High Knees</string>
     <string name="high_knees_description">High knees are an effective exercise for improving cardiovascular fitness and strengthening lower body muscles.
         \n\nInstruction:
         \nFirst, stand upright with feet hip width apart.
@@ -117,7 +117,7 @@
         \n\nInstruction:
         \nFirst, hold dumbbells at shoulder width with maintain proper posture.
         \nThen, take step forward with one leg, lowering your body until your front thigh is parallel to the ground.
-        \nFinally, ensure your front knee doesn't extend past your toes, then push through your feet to return to standing.
+        \nFinally, ensure your front knee does not extend past your toes, then push through your feet to return to standing.
     </string>
     <string name="dumbbell_shoulder_press">Dumbbell Shoulder Press</string>
     <string name="dumbbell_shoulder_press_description">Dumbbell shoulder press is a strength training exercise that targets the deltoid muscles of the shoulders.
@@ -136,10 +136,10 @@
     <string name="dumbbell_deadlift">Dumbbell Deadlift</string>
     <string name="dumbbell_deadlift_description">Dumbbell deadlift is an exercise that targets the hamstrings and glutes which can emphasizing hip hinge movement.
         \n\nInstruction:
-        \nFirst, hold a dumbbell in each hand, palms facing your body, and stand with your feet shoulder-width apart.
-        \nThen, bend your legs and keep your back straight, and slowly lower the dumbbells toward the floor without rounding your back.
+        \nFirst, start by holding a dumbbell in each hand with palms facing your body, and stand with feet shoulder-width apart.
+        \nThen, bend your legs while maintaining a straight back, lowering the dumbbells toward the floor.
         \nPause where you feel the stretch in your hamstrings.
-        \nFinally, return to standing, squeezing your glutes and keeping your core tight, lowering yourself into the rack as low as possible.
+        \nFinally,  raise the dumbbells upwards, again keeping the back straight.
     </string>
     <string name="dumbbell_chest_press">Dumbbell Chest Press</string>
     <string name="dumbbell_chest_press_description">Dumbbell chest presses are an exercise that target the pectoral muscles and help to improve stability during daily activities and athletic performance.
@@ -174,7 +174,7 @@
         \n\nInstruction:
         \nFirst, sit down with your feet slightly raised and your back tilted back.
         \nThen, hold the dumbbells with both hands and twist them left and right.
-        \nFinally, keep your legs still and your neck neutral as you twist, and don't forget to exhale as you twist.
+        \nFinally, keep your legs still and your neck neutral as you twist, and don\'t forget to exhale as you twist.
     </string>
     <string name="dumbbell_arnold_press">Dumbbell Arnold Press</string>
     <string name="dumbbell_arnold_press_description">Dumbbell Arnold Press is an upper body strength exercise that builds shoulder, arm, and core strength.
